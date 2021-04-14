@@ -10,6 +10,7 @@ import districts_styles from "../pages/districts/Districts.module.css";
 // import ReactAudioPlayer from "react-audio-player";
 
 import Menu from "../components/Menu";
+import Map from "../components/Map";
 export default function Home({ districts }) {
   // const tl1 = new Timeline({ defaults: { ease: "power1.out" } });
   // useEffect(() => {
@@ -44,7 +45,8 @@ export default function Home({ districts }) {
         </a>
       </div>
 
-      <img className={styles.xerite} src="/xerite-transparant.png" />
+      {/* <img className={styles.xerite} src="/xerite-transparant.png" /> */}
+      <Map />
 
       <Menu />
       {/* <div className={styles.slider}>
