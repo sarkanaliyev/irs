@@ -1,65 +1,76 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
-export default function Home() {
+import { fromImageToUrl, API_URL } from "../utils/urls";
+import monuments_styles from "../pages/monument/Monument.module.css";
+import districts_styles from "../pages/districts/Districts.module.css";
+
+// import { Timeline } from "gsap/gsap-core";
+// import ReactAudioPlayer from "react-audio-player";
+
+import Menu from "../components/Menu";
+export default function Home({ districts }) {
+  // const tl1 = new Timeline({ defaults: { ease: "power1.out" } });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     tl1.to(".slider", { y: "-100%", duration: 1.5 });
+  //   }, 20000);
+  // });
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    console.log("opennav");
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+      <div className={monuments_styles.top}>
+        <a href="/">
+          <img src="/logo.svg" className={districts_styles.districts_logo} />
         </a>
-      </footer>
+
+        {/* <p className={districts_styles.districts_az}>AZ</p> */}
+        <a
+          href="#"
+          className={districts_styles.districts_hamburger}
+          onClick={openNav}
+        >
+          <div className={districts_styles.districts_one}></div>
+          <div className={districts_styles.districts_two}></div>
+          <div className={districts_styles.districts_three}></div>
+        </a>
+      </div>
+
+      <img className={styles.xerite} src="/xerite-transparant.png" />
+
+      <Menu />
+      {/* <div className={styles.slider}>
+        <div className={styles.previewcontainer}>
+          <ReactAudioPlayer src={susanitq} autoPlay={true} />
+
+          <div className={styles.speechcontainer}>
+            <p className={styles.speech}>Əziz Şuşa, sən azadsan!</p>
+            <p className={styles.speech1}> Əziz Şuşa, biz qayıtmışıq! </p>
+            <p className={styles.speech2}>Əziz Şuşa, biz səni dirçəldəcəyik!</p>
+          </div>
+          <p className={styles.president}>Ilham Əliyev</p>
+          <p className={styles.presidentx}>Azerbaycan Respublikasinin Prezidenti</p>
+        </div>
+      </div> */}
     </div>
-  )
+  );
+}
+
+export async function getStaticProps() {
+  const district_res = await fetch(`${API_URL}/districts/`);
+  const districts = await district_res.json();
+
+  return {
+    props: {
+      districts,
+    },
+  };
 }

@@ -1,0 +1,124 @@
+.districts_heykel {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background-image: linear-gradient(
+      180deg,
+      #000000 -112.64%,
+      rgba(0, 0, 0, 0) 100%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("/heykel.jpg");
+  background-size: cover;
+  cursor: initial;
+  /* background-position: center; */
+  /* background: linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 76.08%, rgba(0, 0, 0, 0.1) 76.08%); */
+}
+
+.monuments_arrow {
+  padding-top: 20px;
+}
+.arrow:hover {
+  color: blue;
+}
+.monuments_rayonlar {
+  padding-top: 10px;
+  margin: 0;
+  /* font-size: 0.9765625vw; */
+  font-size: 1.9893899204244032vh;
+  /* background-color: grey; */
+}
+.monuments_sub_rayonlar {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
+
+  /* font-size: 1.6927083333333333vw; */
+  font-size: 3.4482758620689653vh;
+
+  color: #3a3d3f;
+}
+
+.radio__input {
+  display: none;
+}
+.radio__label {
+  padding: 8px 14px;
+  /* margin-right: 18px; */
+  margin-right: 1.171875vw;
+  /* font-size: 11px; */
+  /* width: 100%; */
+  /* font-size: 0.7161458333333334vw; */
+  font-size: 1.4588859416445623vh;
+  letter-spacing: 0.08em;
+
+  color: #000;
+  /* background: red; */
+  cursor: pointer;
+  background: #ffffff;
+  /* border: 1px solid #dde1e6; */
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 11px; */
+  /* line-height: 170%; */
+  /* identical to box height, or 19px */
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.radio__input:checked + .radio__label {
+  background: orange;
+}
+
+.abideler_grid_responsive {
+  margin-right: 7.5%;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 1210px) {
+  .button_group {
+    display: none;
+  }
+  .dropdown {
+    display: unset;
+    background: #ffffff;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    font-family: Palatino Linotype;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 170%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #3a3d3f;
+  }
+
+  .dropdown option {
+    font-family: Palatino Linotype;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 170%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #3a3d3f;
+
+    width: 100%;
+  }
+}

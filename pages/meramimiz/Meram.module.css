@@ -1,0 +1,27 @@
+.meram_p {
+  width: 658px;
+
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 0.9114583333333334vw; */
+  font-size: 1.856763925729443vh;
+  /* line-height: 26px; */
+  /* or 186% */
+
+  color: #3a3d3f;
+}
+.meram_p ul {
+  list-style-type: none;
+}
+
+.meram_p ul li {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .meram_p {
+    width: 100%;
+  }
+}

@@ -1,0 +1,295 @@
+[
+  {
+    "id": 1,
+    "name": "fuzuli",
+    "published_at": "2021-03-09T22:26:29.669Z",
+    "created_at": "2021-03-09T22:26:24.885Z",
+    "updated_at": "2021-03-09T22:26:29.714Z",
+    "image": {
+      "id": 4,
+      "name": "frame_2.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 317,
+      "height": 245,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_frame_2.png",
+          "hash": "thumbnail_frame_2_833f980e30",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 202,
+          "height": 156,
+          "size": 58.51,
+          "path": null,
+          "url": "/uploads/thumbnail_frame_2_833f980e30.png"
+        }
+      },
+      "hash": "frame_2_833f980e30",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 103.06,
+      "url": "/uploads/frame_2_833f980e30.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-09T22:26:15.300Z",
+      "updated_at": "2021-03-09T22:26:15.323Z"
+    },
+    "monuments": [
+      {
+        "id": 1,
+        "name": "Karvansaray Abidesi",
+        "content": "Qargabazar kendindeki karvansaray",
+        "meta_description": "karvansaray description",
+        "meta_title": "karavansaray title",
+        "slug": "karvansaray-abidesi",
+        "district": 1,
+        "published_at": "2021-03-09T20:48:58.780Z",
+        "created_at": "2021-03-09T20:48:54.099Z",
+        "updated_at": "2021-03-09T22:26:24.913Z",
+        "image": {
+          "id": 1,
+          "name": "k-w.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1280,
+          "height": 853,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_k-w.jpg",
+              "hash": "thumbnail_k_w_4f3806842a",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 234,
+              "height": 156,
+              "size": 10.39,
+              "path": null,
+              "url": "/uploads/thumbnail_k_w_4f3806842a.jpg"
+            },
+            "large": {
+              "name": "large_k-w.jpg",
+              "hash": "large_k_w_4f3806842a",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 666,
+              "size": 153.98,
+              "path": null,
+              "url": "/uploads/large_k_w_4f3806842a.jpg"
+            },
+            "medium": {
+              "name": "medium_k-w.jpg",
+              "hash": "medium_k_w_4f3806842a",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 500,
+              "size": 93.78,
+              "path": null,
+              "url": "/uploads/medium_k_w_4f3806842a.jpg"
+            },
+            "small": {
+              "name": "small_k-w.jpg",
+              "hash": "small_k_w_4f3806842a",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 333,
+              "size": 42.84,
+              "path": null,
+              "url": "/uploads/small_k_w_4f3806842a.jpg"
+            }
+          },
+          "hash": "k_w_4f3806842a",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 218.96,
+          "url": "/uploads/k_w_4f3806842a.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-09T20:46:54.394Z",
+          "updated_at": "2021-03-09T20:46:54.422Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "cebrayil",
+    "published_at": "2021-03-09T22:26:54.080Z",
+    "created_at": "2021-03-09T22:26:50.962Z",
+    "updated_at": "2021-03-09T22:26:54.123Z",
+    "image": {
+      "id": 5,
+      "name": "frame_1.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 317,
+      "height": 245,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_frame_1.png",
+          "hash": "thumbnail_frame_1_bd9c7a928f",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 202,
+          "height": 156,
+          "size": 54.02,
+          "path": null,
+          "url": "/uploads/thumbnail_frame_1_bd9c7a928f.png"
+        }
+      },
+      "hash": "frame_1_bd9c7a928f",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 91.92,
+      "url": "/uploads/frame_1_bd9c7a928f.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-09T22:26:47.690Z",
+      "updated_at": "2021-03-09T22:26:47.710Z"
+    },
+    "monuments": [
+      {
+        "id": 2,
+        "name": "Govher Aga Abidesi",
+        "content": "Govher aga content",
+        "meta_description": "govher aga description",
+        "meta_title": "govher aga title",
+        "slug": "govher-aga-abidesi",
+        "district": 2,
+        "published_at": "2021-03-09T20:51:30.071Z",
+        "created_at": "2021-03-09T20:51:02.814Z",
+        "updated_at": "2021-03-09T22:26:50.985Z",
+        "image": {
+          "id": 2,
+          "name": "govher_aga_evvel.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 553,
+          "height": 528,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_govher_aga_evvel.jpg",
+              "hash": "thumbnail_govher_aga_evvel_1230f6a8ab",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 163,
+              "height": 156,
+              "size": 6.88,
+              "path": null,
+              "url": "/uploads/thumbnail_govher_aga_evvel_1230f6a8ab.jpg"
+            },
+            "small": {
+              "name": "small_govher_aga_evvel.jpg",
+              "hash": "small_govher_aga_evvel_1230f6a8ab",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 477,
+              "size": 48.98,
+              "path": null,
+              "url": "/uploads/small_govher_aga_evvel_1230f6a8ab.jpg"
+            }
+          },
+          "hash": "govher_aga_evvel_1230f6a8ab",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 59.54,
+          "url": "/uploads/govher_aga_evvel_1230f6a8ab.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-09T20:49:50.709Z",
+          "updated_at": "2021-03-09T20:49:50.747Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "susa",
+    "published_at": "2021-03-09T22:27:30.985Z",
+    "created_at": "2021-03-09T22:27:18.118Z",
+    "updated_at": "2021-03-09T22:27:31.041Z",
+    "image": {
+      "id": 6,
+      "name": "frame_10.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 317,
+      "height": 245,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_frame_10.png",
+          "hash": "thumbnail_frame_10_9be18ed582",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 202,
+          "height": 156,
+          "size": 58.31,
+          "path": null,
+          "url": "/uploads/thumbnail_frame_10_9be18ed582.png"
+        }
+      },
+      "hash": "frame_10_9be18ed582",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 101.54,
+      "url": "/uploads/frame_10_9be18ed582.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-09T22:27:11.773Z",
+      "updated_at": "2021-03-09T22:27:11.795Z"
+    },
+    "monuments": [
+      {
+        "id": 3,
+        "name": "Ucuncu Abide",
+        "content": "Ucuncu Abide context",
+        "meta_description": "Ucuncu Abide description",
+        "meta_title": "Ucuncu Abide title",
+        "slug": "ucuncu-abide",
+        "district": 3,
+        "published_at": "2021-03-09T22:21:33.910Z",
+        "created_at": "2021-03-09T22:21:29.246Z",
+        "updated_at": "2021-03-09T22:27:18.146Z",
+        "image": {
+          "id": 3,
+          "name": "saatli_sonra.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 265,
+          "height": 480,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_saatli_sonra.jpg",
+              "hash": "thumbnail_saatli_sonra_2f07f9431e",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 86,
+              "height": 156,
+              "size": 6.11,
+              "path": null,
+              "url": "/uploads/thumbnail_saatli_sonra_2f07f9431e.jpg"
+            }
+          },
+          "hash": "saatli_sonra_2f07f9431e",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 53.48,
+          "url": "/uploads/saatli_sonra_2f07f9431e.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-09T22:21:10.438Z",
+          "updated_at": "2021-03-09T22:21:10.459Z"
+        }
+      }
+    ]
+  }
+]

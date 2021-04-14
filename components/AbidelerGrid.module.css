@@ -1,0 +1,20 @@
+.abide_ad {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 0.9114583333333334vw; */
+  font-size: 1.856763925729443vh;
+  /* identical to box height */
+  /* margin-top: 5px; */
+  color: #1a1a1a;
+}
+
+.paper {
+  text-align: center;
+  width: 100%;
+  /* height: 180px; */
+  height: 23.872679045092838vh;
+  cursor: pointer;
+
+  object-fit: cover;
+}

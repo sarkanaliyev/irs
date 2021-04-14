@@ -1,0 +1,176 @@
+.districts_container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.districts_heykel {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background-image: linear-gradient(
+      180deg,
+      #000000 -112.64%,
+      rgba(0, 0, 0, 0) 100%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("/kelbecer.png");
+  background-size: cover;
+  cursor: initial;
+  background-position: center;
+  /* background: linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 76.08%, rgba(0, 0, 0, 0.1) 76.08%); */
+}
+
+.districts_logo {
+  position: absolute;
+  /* width: 250.36px; */
+  /* height: 49px; */
+  /* width: 16.276041666666668vw; */
+  /* height: 3.1901041666666665vw ; */
+  /* width: 33.204244031830235vh; */
+  /* height: 6.49867374005305vh; */
+
+  left: 50px;
+  /* left: 3.2552083333333335vw; */
+  /* left: 6.63129973474801vh; */
+
+  top: 40px;
+  /* top: 5.305039787798409vh; */
+  /* top: 2.6041666666666665vw; */
+
+  /* z-index: 2; */
+  cursor: pointer;
+}
+
+.districts_hamburger {
+  position: absolute;
+  /* width: 42px;
+  height: 16px; */
+  /* width: 2.734375vw; */
+  width: 5.570291777188329vh;
+  height: 2.1220159151193636vh;
+
+  right: 50px;
+  top: 50px;
+  z-index: 1;
+  /* right: 3.2552083333333335vw;
+  top: 7.427055702917772vh; */
+
+  /* margin: 2em 0 0 2em; */
+  /* margin-left: 8%;
+  margin-top: 2%; */
+}
+
+.districts_hamburger div {
+  /* height: 2px; */
+  height: 0.26525198938992045vh;
+  background: #fff;
+  /* margin: 2px 0; */
+  margin: 0.26525198938992045vh 0;
+  /* border-right: 24px; */
+  transition: 0.3s;
+}
+
+.districts_one {
+  /* width: 50px; */
+  /* width: 3.2552083333333335vw; */
+  /* width: 2.734375vw; */
+  /* width: 6.63129973474801vh; */
+  width: 5.570291777188329vh;
+  float: right;
+}
+
+.districts_two {
+  /* width: 40px; */
+  /* width: 2.6041666666666665vw; */
+  /* width: 2.4739583333333335vw; */
+  /* width: 5.305039787798409vh; */
+  width: 5.039787798408488vh;
+  float: right;
+}
+.districts_three {
+  /* width: 30px; */
+  /* width: 1.953125vw; */
+  /* width: 2.2135416666666665vw; */
+  /* width: 3.9787798408488064vh; */
+  width: 4.5092838196286475vh;
+  float: right;
+}
+
+.districts_hamburger:hover div {
+  /* width: 50px; */
+  /* width: 3.2552083333333335vw; */
+  width: 5.570291777188329vh;
+}
+
+.districts_az {
+  position: absolute;
+  /* width: 24px;
+  height: 22px; */
+  /* right: 125px; */
+  right: 16.578249336870027vh;
+  top: 35px;
+
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 16px; */
+  font-size: 2.1220159151193636vh;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  /* display: none; */
+}
+
+.districts_responsive {
+  /* background-color: red; */
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  overflow: hidden;
+  margin-bottom: 2%;
+  /* margin-top: 0; */
+  cursor: initial;
+}
+
+.districts_rayonlar {
+  padding-top: 40px;
+  margin: 0;
+  /* font-size: 0.9765625vw; */
+  font-size: 1.9893899204244032vh;
+  /* background-color: grey; */
+}
+.districts_sub_rayonlar {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
+
+  /* font-size: 1.6927083333333333vw; */
+  font-size: 3.4482758620689653vh;
+
+  color: #3a3d3f;
+}
+
+.rayonlar_grid {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .districts_logo {
+    width: 180px;
+    height: 50px;
+    left: 20px;
+    top: 30px;
+  }
+  .districts_az {
+    display: none;
+  }
+  .districts_hamburger {
+    width: 5.570291777188329vh;
+    height: 2.1220159151193636vh;
+
+    right: 20px;
+    top: 45px;
+  }
+}

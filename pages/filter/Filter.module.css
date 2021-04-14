@@ -1,0 +1,48 @@
+.select {
+  padding: 8px 14px;
+  /* margin-right: 18px; */
+  margin-right: 1.171875vw;
+  /* font-size: 11px; */
+  /* width: 100%; */
+  /* font-size: 0.7161458333333334vw; */
+  font-size: 1.4588859416445623vh;
+  letter-spacing: 0.08em;
+
+  color: #000;
+  background: #009578;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #dde1e6;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 11px; */
+  /* line-height: 170%; */
+  /* identical to box height, or 19px */
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.select option {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4588859416445623vh;
+  letter-spacing: 0.08em;
+  /* identical to box height, or 19px */
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.arrowa {
+  cursor: pointer;
+}
+@media (max-width: 1210px) {
+  .sicontainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
