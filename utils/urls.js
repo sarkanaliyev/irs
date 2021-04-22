@@ -1,5 +1,5 @@
 export const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://104.248.242.78:1337";
+  process.env.NEXT_PUBLIC_API_URL || "https://abide.inetlab.info/";
   // process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
 // export const API_URL =
 //   process.env.NEXT_PUBLIC_API_URL ||
