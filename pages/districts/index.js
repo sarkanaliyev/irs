@@ -15,9 +15,9 @@ export default function Districts({ districts }) {
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState();
-  console.log(districts.map((value) => value.name));
+  // console.log(districts.map((value) => value.name));
   const array = districts.map((value) => value.name);
-  console.log(array.sort());
+  // console.log(array.sort());
   const sortedarray = array.sort();
 
   function openNav() {
@@ -28,7 +28,7 @@ export default function Districts({ districts }) {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
-  console.log(districts);
+  // console.log(districts);
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
