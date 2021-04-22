@@ -29,11 +29,11 @@ export default function Menu() {
                 <p>Xəritə</p>
               </a>
             </Link>
-            <Link href="/multimedia">
+            {/* <Link href="/multimedia">
               <a onClick={closeNav}>
                 <p>Multimedia</p>
               </a>
-            </Link>
+            </Link> */}
           </div>
           <div className={styles.column}>
             <Link href="/meramimiz">
