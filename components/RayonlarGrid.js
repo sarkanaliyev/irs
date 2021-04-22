@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function RayonlarGrid(props) {
-  console.log(props.districts);
   const classes = useStyles();
 
   function FormRow() {
