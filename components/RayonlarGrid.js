@@ -40,6 +40,17 @@ export default function RayonlarGrid(props) {
                   //   )})`,
                   // }}
                 >
+                  {value.image && (
+                    <div
+                      className={styles.img_holder}
+                      style={{
+                        backgroundImage: `linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%),url(${fromImageToUrl(
+                          value.image.formats.thumbnail
+                        )})`,
+                      }}
+                    ></div>
+                  )}
+
                   <div
                     className={styles.img_holder}
                     style={{

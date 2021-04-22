@@ -11,7 +11,8 @@ import { useRouter } from "next/router";
 import home_styles from "../../styles/Home.module.css";
 
 export default function Districts({ districts }) {
-  console.log(districts)
+  console.log(districts);
+  console.log(districts[8].image.formats.thumbnail);
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState();
