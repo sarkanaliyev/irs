@@ -3,6 +3,7 @@ import { BsArrowLeft } from "react-icons/bs";
 
 import styles from "../districts/Districts.module.css";
 import monuments_styles from "../monuments/Monuments.module.css";
+import home_styles from "../../styles/Home.module.css";
 import meram_styles from "../meramimiz/Meram.module.css";
 import Link from "next/link";
 
@@ -12,11 +13,15 @@ import search_style from "./Search.module.css";
 import { useState } from "react";
 import Divider from "@material-ui/core/Divider";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Search = ({ monuments }) => {
+  console.log(monuments[0]);
   const router = useRouter();
+  console.log(router.query.keyword);
 
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(`${router.query.keyword}`);
+  console.log(searchTerm);
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
     console.log("opennav");
@@ -28,17 +33,34 @@ const Search = ({ monuments }) => {
   console.log(monuments[0]);
   return (
     <div className={styles.districts_container}>
-      <div className={styles.districts_heykel}>
+      <div className={monuments_styles.districts_heykel}>
         <a href="/">
-          <img src="/logo.svg" className={styles.districts_logo} />
+          <img src="/logo.svg" />
         </a>
         {/* <p className={styles.districts_az}>AZ</p> */}
-
-        <a href="#" className={styles.districts_hamburger} onClick={openNav}>
-          <div className={styles.districts_one}></div>
-          <div className={styles.districts_two}></div>
-          <div className={styles.districts_three}></div>
-        </a>
+        <div className={monuments_styles.hamburger_div}>
+          {/* <input
+            className={home_styles.search_input}
+            type="text"
+            placeholder="Axtar..."
+            onChange={(event) => {
+              setSearchTerm(event.target.value);
+            }}
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                router.push({
+                  pathname: "/search",
+                  query: { keyword: searchTerm },
+                });
+              }
+            }}
+          /> */}
+          <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+          </a>
+        </div>
       </div>
 
       <div className={styles.districts_responsive}>
@@ -95,8 +117,34 @@ const Search = ({ monuments }) => {
             return (
               <Link href={`/monument/${val.slug}`}>
                 <div className={search_style.result}>
+                  {/* {val.after_occupation ? (
+                      <img
+                        src={fromImageToUrl(val.after_occupation)}
+                        width={"100%"}
+                        height={"100%"}
+                        className={search_style.abide_img}
+                      />
+                    ) : val.before_occupation ? (
+                      <img
+                        src={fromImageToUrl(val.before_occupation)}
+                        width={"100%"}
+                        height={"100%"}
+                        className={search_style.abide_img}
+                      />
+                    ) : (
+                      <img
+                        src={fromImageToUrl(val.during_occupation)}
+                        width={"100%"}
+                        height={"100%"}
+                        className={search_style.abide_img}
+                      />
+                    )}
+                     */}
+
+                  {/* <div className={search_style.abide_info}> */}
                   <p className={search_style.name}>{val.name}</p>
                   <p className={search_style.content}>{val.content}</p>
+                  {/* </div> */}
                   <Divider />
                 </div>
               </Link>

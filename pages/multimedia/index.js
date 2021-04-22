@@ -1,24 +1,26 @@
-import Head from "next/head";
-import Link from "next/link";
-
+// import monuments from "../../monuments.json";
 import { fromImageToUrl, API_URL } from "../../utils/urls";
-import RayonlarGrid from "../../components/RayonlarGrid";
-import styles from "./Districts.module.css";
-import Menu from "../../components/Menu.js";
+import { BsArrowLeft } from "react-icons/bs";
+
+import styles from "../districts/Districts.module.css";
 import monuments_styles from "../monuments/Monuments.module.css";
-import { useState } from "react";
-import { useRouter } from "next/router";
 import home_styles from "../../styles/Home.module.css";
 
-export default function Districts({ districts }) {
+// const monument = monuments[0];
+import { useState } from "react";
+import AbidelerGrid from "../../components/AbidelerGrid";
+
+import Link from "next/link";
+
+import Menu from "../../components/Menu.js";
+import MultimediaGrid from "../../components/MultimediaGrid";
+
+import { useRouter } from "next/router";
+const Multimedia = ({ multis }) => {
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState();
-  console.log(districts.map((value) => value.name));
-  const array = districts.map((value) => value.name);
-  console.log(array.sort());
-  const sortedarray = array.sort();
-
+  console.log(multis[0].name);
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
     console.log("opennav");
@@ -27,16 +29,13 @@ export default function Districts({ districts }) {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
-  console.log(districts);
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
         <a href="/">
           <img src="/logo.svg" />
         </a>
-
         {/* <p className={styles.districts_az}>AZ</p> */}
-        {/* <p>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
           <input
             className={home_styles.search_input}
@@ -63,24 +62,40 @@ export default function Districts({ districts }) {
       </div>
 
       <div className={styles.districts_responsive}>
-        <p className={styles.districts_rayonlar}>Ana səhifə / Rayonlar</p>
-        <p className={styles.districts_sub_rayonlar}>Rayonlar</p>
+        <div className={monuments_styles.monuments_arrow}>
+          <Link href="/districts">
+            <a>
+              <BsArrowLeft
+                size={"2.6525198938992043vh"}
+                className={monuments_styles.arrow}
+              />
+            </a>
+          </Link>
+        </div>
+        <p className={monuments_styles.monuments_rayonlar}>
+          Ana səhifə / Multimedia
+        </p>
+        <p className={monuments_styles.monuments_sub_rayonlar}>Multimedia</p>
+
         <div className={styles.rayonlar_grid}>
-          <RayonlarGrid districts={districts} />
+          {/* <AbidelerGrid monuments={monument.monuments} category={category} /> */}
+          <MultimediaGrid multis={multis} />
         </div>
       </div>
       <Menu />
     </div>
   );
-}
+};
 
 export async function getStaticProps() {
-  const district_res = await fetch(`${API_URL}/districts`);
-  const districts = await district_res.json();
+  const multi_res = await fetch(`${API_URL}/multimedias`);
+  const multis = await multi_res.json();
 
   return {
     props: {
-      districts,
+      multis,
     },
   };
 }
+
+export default Multimedia;

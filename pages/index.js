@@ -14,14 +14,19 @@ import Map from "../components/Map";
 import { BsArrowLeft } from "react-icons/bs";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Home({ districts }) {
+  const router = useRouter();
+  const [searchTerm, setSearchTerm] = useState();
+
   // const tl1 = new Timeline({ defaults: { ease: "power1.out" } });
   // useEffect(() => {
   //   setTimeout(() => {
   //     tl1.to(".slider", { y: "-100%", duration: 1.5 });
   //   }, 20000);
   // });
+
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -45,26 +50,36 @@ export default function Home({ districts }) {
   }
   return (
     <div className={styles.container}>
-      <div
-        className={`${styles.right_slider} ${
-          isOpen && styles.right_slider_active
-        }`}
-      ></div>
-      <div className={monuments_styles.top}>
+      <div className={styles.home_top}>
         <a href="/">
-          <img src="/logo.svg" className={districts_styles.districts_logo} />
+          <img src="/logo.svg" />
         </a>
 
         {/* <p className={districts_styles.districts_az}>AZ</p> */}
-        <a
-          href="#"
-          className={districts_styles.districts_hamburger}
-          onClick={openNav}
-        >
-          <div className={districts_styles.districts_one}></div>
-          <div className={districts_styles.districts_two}></div>
-          <div className={districts_styles.districts_three}></div>
-        </a>
+        <div className={styles.hamburger_div}>
+          {/* <input
+            className={styles.search_input}
+            type="text"
+            placeholder="Axtar..."
+            onChange={(event) => {
+              setSearchTerm(event.target.value);
+            }}
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                router.push({
+                  pathname: "/search",
+                  query: { keyword: searchTerm },
+                });
+              }
+            }}
+          /> */}
+
+          <a href="#" className={styles.hamburger} onClick={openNav}>
+            <div className={styles.h_div}></div>
+            <div className={styles.h_div}></div>
+            <div className={styles.h_div}></div>
+          </a>
+        </div>
       </div>
 
       {/* <img className={styles.xerite} src="/xerite-transparant.png" /> */}

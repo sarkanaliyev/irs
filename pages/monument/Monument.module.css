@@ -85,10 +85,23 @@
 .abide_right_melumat_div {
   width: 100%;
 }
+.vandalizm {
+  font-size: 0.9114583333333334vw;
+  line-height: 1.8229166666666667vw;
+  /* padding-bottom: 10px; */
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+
+  color: #3a3d3f;
+}
 .abide_right_text {
   font-size: 0.9114583333333334vw;
   line-height: 1.8229166666666667vw;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-family: Palatino Linotype;
   font-style: normal;
   font-weight: normal;
@@ -111,7 +124,8 @@
 
 .column {
   float: left;
-  width: 33.33%;
+  /* width: 33.33%; */
+  width: 25%;
   text-align: center;
   vertical-align: middle;
   cursor: initial;
@@ -173,7 +187,7 @@
   .abide_right_text {
     font-size: 14px;
     line-height: 28px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
   }
   .abide_right_rayon {
     font-size: 15px;

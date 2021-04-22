@@ -1,3 +1,5 @@
+import { AiOutlineSearch } from "react-icons/ai";
+
 // import monuments from "../../monuments.json";
 import { fromImageToUrl, API_URL } from "../../utils/urls";
 import { BsArrowLeft } from "react-icons/bs";
@@ -12,13 +14,24 @@ import Link from "next/link";
 
 import Menu from "../../components/Menu.js";
 
+import { useRouter } from "next/router";
+import home_styles from "../../styles/Home.module.css";
+
 const Monuments = ({ monument }) => {
+  const router = useRouter();
+
+  const [searchTerm, setSearchTerm] = useState();
+  monument.monuments.includes((monument) => {
+    console.log(monument.category);
+  });
+  console.log(monument.monuments.some((item) => item.category == "2"));
+  console.log(monument.monuments);
   // console.log(monument.monuments[0].category)
   const [radio, setRadio] = useState("apple");
   const [content, setContent] = useState("apple content");
-  const [category, setCategory] = useState(1);
+  const [category, setCategory] = useState();
 
-  const [firstChecked, setFirstChecked] = useState(true);
+  const [firstChecked, setFirstChecked] = useState(false);
   const [secondChecked, setSecondChecked] = useState(false);
   const [thirdChecked, setThirdChecked] = useState(false);
   const [fourthChecked, setFourthChecked] = useState(false);
@@ -72,15 +85,32 @@ const Monuments = ({ monument }) => {
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
         <a href="/">
-          <img src="/logo.svg" className={styles.districts_logo} />
+          <img src="/logo.svg" />
         </a>
         {/* <p className={styles.districts_az}>AZ</p> */}
-
-        <a href="#" className={styles.districts_hamburger} onClick={openNav}>
-          <div className={styles.districts_one}></div>
-          <div className={styles.districts_two}></div>
-          <div className={styles.districts_three}></div>
-        </a>
+        <div className={monuments_styles.hamburger_div}>
+          <input
+            className={home_styles.search_input}
+            type="text"
+            placeholder="Axtar..."
+            onChange={(event) => {
+              setSearchTerm(event.target.value);
+            }}
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                router.push({
+                  pathname: "/search",
+                  query: { keyword: searchTerm },
+                });
+              }
+            }}
+          />
+          <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+          </a>
+        </div>
       </div>
 
       <div className={styles.districts_responsive}>
@@ -122,72 +152,108 @@ const Monuments = ({ monument }) => {
         </select>
 
         <div className={monuments_styles.button_group}>
-          <input
-            className={monuments_styles.radio__input}
-            type="radio"
-            value="option1"
-            name="myRadio"
-            id="myRadio1"
-            onChange={(e) => {
-              setRadio(e.target.value);
-              setContent("apple content");
-              setCategory(1);
-              handeFirst();
+          {monument.monuments.some((item) => item.category == "1") && (
+            <>
+              <input
+                className={monuments_styles.radio__input}
+                type="radio"
+                value="option1"
+                name="myRadio"
+                id="myRadio1"
+                onChange={(e) => {
+                  setRadio(e.target.value);
+                  setContent("apple content");
+                  setCategory(1);
+                  handeFirst();
+                }}
+                checked={firstChecked}
+              />
+              <label className={monuments_styles.radio__label} for="myRadio1">
+                MEMARLIQ ABİDƏLƏRİ
+              </label>
+            </>
+          )}
+          {monument.monuments.some((item) => item.category == "2") && (
+            <>
+              <input
+                className={monuments_styles.radio__input}
+                type="radio"
+                value="option2"
+                name="myRadio"
+                id="myRadio2"
+                onChange={(e) => {
+                  setRadio(e.target.value);
+                  setContent("orange content");
+                  setCategory(2);
+                  handeSecond();
+                }}
+              />
+              <label className={monuments_styles.radio__label} for="myRadio2">
+                BAĞ-PARK,MONOMENTAL VƏ XATİRƏ ABİDƏLƏRİ
+              </label>
+            </>
+          )}
+          {monument.monuments.some((item) => item.category == "3") && (
+            <>
+              <input
+                className={monuments_styles.radio__input}
+                type="radio"
+                value="option3"
+                name="myRadio"
+                id="myRadio3"
+                onChange={(e) => {
+                  setRadio(e.target.value);
+                  setContent("banana content");
+                  setCategory(3);
+                  handeThird();
+                }}
+              />
+              <label className={monuments_styles.radio__label} for="myRadio3">
+                ARXEOLOJİ ABİBƏLƏR
+              </label>
+            </>
+          )}
+          {monument.monuments.some((item) => item.category == "4") && (
+            <>
+              <input
+                className={monuments_styles.radio__input}
+                type="radio"
+                value="option4"
+                name="myRadio"
+                id="myRadio4"
+                onChange={(e) => {
+                  setRadio(e.target.value);
+                  setContent("dord content");
+                  setCategory(4);
+                  handeFourth();
+                }}
+              />
+              <label className={monuments_styles.radio__label} for="myRadio4">
+                DEKORATİV-TƏTBİQİ SƏNƏT NÜMUNƏLƏRİ
+              </label>
+            </>
+          )}
+          {/* <input
+            type="text"
+            placeholder="Axtar.."
+            className={monuments_styles.search_input}
+            onChange={(event) => {
+              setSearchTerm(event.target.value);
             }}
-            checked={firstChecked}
-          />
-          <label className={monuments_styles.radio__label} for="myRadio1">
-            MEMARLIQ ABİDƏLƏRİ
-          </label>
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                router.push({
+                  pathname: "/search",
+                  query: { keyword: searchTerm },
+                });
+              }
+            }}
+          /> */}
 
-          <input
-            className={monuments_styles.radio__input}
-            type="radio"
-            value="option2"
-            name="myRadio"
-            id="myRadio2"
-            onChange={(e) => {
-              setRadio(e.target.value);
-              setContent("orange content");
-              setCategory(2);
-              handeSecond();
-            }}
-          />
-          <label className={monuments_styles.radio__label} for="myRadio2">
-            BAĞ-PARK,MONOMENTAL VƏ XATİRƏ ABİDƏLƏRİ
-          </label>
-          <input
-            className={monuments_styles.radio__input}
-            type="radio"
-            value="option3"
-            name="myRadio"
-            id="myRadio3"
-            onChange={(e) => {
-              setRadio(e.target.value);
-              setContent("banana content");
-              setCategory(3);
-              handeThird();
-            }}
-          />
-          <label className={monuments_styles.radio__label} for="myRadio3">
-            ARXEOLOJİ ABİBƏLƏR
-          </label>
-          <input
-            className={monuments_styles.radio__input}
-            type="radio"
-            value="option4"
-            name="myRadio"
-            id="myRadio4"
-            onChange={(e) => {
-              setRadio(e.target.value);
-              setContent("dord content");
-              setCategory(4);
-              handeFourth();
-            }}
-          />
-          <label className={monuments_styles.radio__label} for="myRadio4">
-            DEKORATİV-TƏTBİQİ SƏNƏT NÜMUNƏLƏRİ
-          </label>
+          {/* <Link href={{ pathname: "/search", query: { keyword: searchTerm } }}>
+            <button type="submit">axtar</button>
+          </Link> */}
+
           {/* <h1>Radio button is: {content}</h1> */}
         </div>
 

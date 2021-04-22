@@ -28,7 +28,9 @@ export default function Frame(props) {
           <image
             height="1"
             width="1"
-            preserveAspectRatio="none"
+            preserveAspectRatio="xMidYMid slice"
+            // preserveAspectRatio="xMaxYMid slice"
+            // preserveAspectRatio="none"
             href={`${fromImageToUrl(props.image)}`}
             className={styles.img}
           />

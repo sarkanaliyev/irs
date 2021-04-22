@@ -31,7 +31,6 @@ const Monument = ({ monument }) => {
 
   const [currentImage, setCurrentImage] = useState(monument.during_occupation);
 
-
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
     console.log("opennav");
@@ -106,6 +105,21 @@ const Monument = ({ monument }) => {
           <div class={styles.column}>
             <img src={"/frametop.svg"} />
             <a
+            // id="third"
+            // onClick={() => {
+            //   {
+            //     monument.after_occupation &&
+            //       (setCurrentImage(monument.after_occupation), handeThird());
+            //   }
+            // }}
+            >
+              <p className={styles.p}>BƏRPA</p>
+            </a>
+            <img src={"/framebottom.svg"} />
+          </div>
+          <div class={styles.column}>
+            <img src={"/frametop.svg"} />
+            <a
               id="third"
               onClick={() => {
                 {
@@ -138,6 +152,7 @@ const Monument = ({ monument }) => {
               abideEhemiyyet={monument.importance.name}
             />
           </div>
+          <p className={styles.vandalizm}>VANDALIZMƏ MƏRUZ QALMIŞDIR</p>
           <p className={styles.abide_right_text}>{monument.content}</p>
         </div>
       </div>

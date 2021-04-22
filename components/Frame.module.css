@@ -12,6 +12,7 @@
 
 .img {
   /* background-position: 100% 100%; */
-  /* background-size: cover; */
+  background-size: cover;
   /* vertical-align: middle; */
+  /* background: no-repeat center; */
 }

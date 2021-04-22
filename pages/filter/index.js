@@ -2,6 +2,7 @@ import { fromImageToUrl, API_URL } from "../../utils/urls";
 
 import styles from "../districts/Districts.module.css";
 import monuments_styles from "../monuments/Monuments.module.css";
+import home_styles from "../../styles/Home.module.css";
 import filter_styles from "./Filter.module.css";
 import { useState } from "react";
 
@@ -11,6 +12,7 @@ import Menu from "../../components/Menu.js";
 import { useRouter } from "next/router";
 
 const Filter = ({ importances, types }) => {
+  const [searchTerm, setSearchTerm] = useState();
   console.log(types);
   const [firstChecked, setFirstChecked] = useState(true);
   const [secondChecked, setSecondChecked] = useState(false);
@@ -59,17 +61,34 @@ const Filter = ({ importances, types }) => {
   console.log(types[0].slug);
   return (
     <div className={styles.districts_container}>
-      <div className={styles.districts_heykel}>
+      <div className={monuments_styles.districts_heykel}>
         <a href="/">
-          <img src="/logo.svg" className={styles.districts_logo} />
+          <img src="/logo.svg" />
         </a>
         {/* <p className={styles.districts_az}>AZ</p> */}
-
-        <a href="#" className={styles.districts_hamburger} onClick={openNav}>
-          <div className={styles.districts_one}></div>
-          <div className={styles.districts_two}></div>
-          <div className={styles.districts_three}></div>
-        </a>
+        <div className={monuments_styles.hamburger_div}>
+          <input
+            className={home_styles.search_input}
+            type="text"
+            placeholder="Axtar..."
+            onChange={(event) => {
+              setSearchTerm(event.target.value);
+            }}
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                router.push({
+                  pathname: "/search",
+                  query: { keyword: searchTerm },
+                });
+              }
+            }}
+          />
+          <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+          </a>
+        </div>
       </div>
 
       <div className={styles.districts_responsive}>

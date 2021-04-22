@@ -1,20 +1,44 @@
 .districts_heykel {
   position: relative;
   width: 100%;
-  height: 25vh;
+  height: 15vh;
   background-image: linear-gradient(
       180deg,
       #000000 -112.64%,
       rgba(0, 0, 0, 0) 100%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url("/heykel.jpg");
+    url("/kelbecer.png");
   background-size: cover;
   cursor: initial;
-  /* background-position: center; */
+  background-position: center;
   /* background: linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 76.08%, rgba(0, 0, 0, 0.1) 76.08%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 3%;
 }
-
+.hamburger_div {
+  display: flex;
+  /* width: 42px;
+  height: 16px; */
+  /* padding: 0px 0px; */
+}
+.hamburger {
+  padding-left: 20px;
+}
+.h_div {
+  width: 42px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0px;
+}
+.search_input {
+  border-radius: 5px;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+}
 .monuments_arrow {
   padding-top: 20px;
 }
@@ -81,6 +105,32 @@
 
 .dropdown {
   display: none;
+}
+.search_input {
+  padding: 8px 14px;
+  /* margin-right: 18px; */
+  margin-right: 1.171875vw;
+  /* font-size: 11px; */
+  /* width: 100%; */
+  /* font-size: 0.7161458333333334vw; */
+  font-size: 1.4588859416445623vh;
+  letter-spacing: 0.08em;
+
+  color: #000;
+  /* background: red; */
+  background: #ffffff;
+  border: 1px solid #dde1e6;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 11px; */
+  /* line-height: 170%; */
+  /* identical to box height, or 19px */
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1210px) {

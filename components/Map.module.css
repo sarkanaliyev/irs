@@ -16,9 +16,51 @@
 
 .path:hover {
   stroke: brown;
-  stroke-width: 2px;
+  stroke-width: 3px;
 
-  transform: translateY(-1px);
+  transform: translateY(-3px);
+}
+.terter_path {
+  pointer-events: none;
+}
+.xocali_path {
+  pointer-events: none;
+}
+.xocavend_path {
+  pointer-events: none;
+}
+.fuzuli_path:hover ~ .fuzuli {
+  opacity: 1;
+}
+.agdam_path:hover ~ .agdam {
+  opacity: 1;
+}
+.terter_path:hover ~ .terter {
+  opacity: 1;
+}
+.kelbecer_path:hover ~ .kelbecer {
+  opacity: 1;
+}
+.lacin_path:hover ~ .lacin {
+  opacity: 1;
+}
+.xocali_path:hover ~ .xocali {
+  opacity: 1;
+}
+.xocavend_path:hover ~ .xocavend {
+  opacity: 1;
+}
+.qubadli_path:hover ~ .qubadli {
+  opacity: 1;
+}
+.zengilan_path:hover ~ .zengilan {
+  opacity: 1;
+}
+.cebrayil_path:hover ~ .cebrayil {
+  opacity: 1;
+}
+.susa_path:hover ~ .susa {
+  opacity: 1;
 }
 
 .text {
@@ -27,6 +69,7 @@
   opacity: 0;
   pointer-events: none;
 }
+
 .image {
   user-select: none;
   pointer-events: none;
