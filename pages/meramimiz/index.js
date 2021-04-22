@@ -58,17 +58,20 @@ const Meram = () => {
 
       <div className={styles.districts_responsive}>
         <div className={monuments_styles.monuments_arrow}>
-          <Link href="/districts">
-            <a>
-              <BsArrowLeft
-                size={"2.6525198938992043vh"}
-                className={monuments_styles.arrow}
-              />
-            </a>
-          </Link>
+          {/* <Link href="/districts"> */}
+          <a onClick={() => router.back()} className={styles.meram_arrow}>
+            <BsArrowLeft
+              size={"2.6525198938992043vh"}
+              className={monuments_styles.arrow}
+            />
+          </a>
+          {/* </Link> */}
         </div>
         <p className={monuments_styles.monuments_rayonlar}>
-          Ana səhifə / Məramımız
+          <a href="/" className={meram_styles.meram_link}>
+            Ana səhifə
+          </a>
+          / Məramımız
         </p>
         <p className={monuments_styles.monuments_sub_rayonlar}>Məramımız</p>
         <p className={meram_styles.meram_p}>

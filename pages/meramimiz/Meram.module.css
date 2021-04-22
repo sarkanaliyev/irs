@@ -25,3 +25,11 @@
     width: 100%;
   }
 }
+.meram_link {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+}
+.meram_link:hover {
+  color: blue;
+}

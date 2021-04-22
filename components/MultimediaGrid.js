@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
 export default function MultimediaGrid(props) {
   console.log(props.multis[0].image[0])
   const classes = useStyles();
-  const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   function FormRow() {
     return (
       <React.Fragment>

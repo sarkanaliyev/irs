@@ -10,6 +10,8 @@ import AbideMelumat from "../../components/AbideMelumat";
 import Frame from "../../components/Frame";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import monuments_styles from "../monuments/Monuments.module.css";
+import home_styles from "../../styles/Home.module.css";
 
 const Monument = ({ monument }) => {
   const handeFirst = () => {
@@ -41,22 +43,17 @@ const Monument = ({ monument }) => {
   }
   return (
     <div>
-      <div className={styles.top}>
-        <a href="/">
-          <img src="/logo.svg" className={districts_styles.districts_logo} />
+      <div className={monuments_styles.monument_heykel}>
+        <a href="/" className={monuments_styles.monument_a}>
+          <img src="/logo.svg" className={monuments_styles.monument_logo} />
         </a>
-
-        {/* <p className={districts_styles.districts_az}>AZ</p> */}
-
-        <a
-          href="#"
-          className={districts_styles.districts_hamburger}
-          onClick={openNav}
-        >
-          <div className={districts_styles.districts_one}></div>
-          <div className={districts_styles.districts_two}></div>
-          <div className={districts_styles.districts_three}></div>
-        </a>
+        <div className={monuments_styles.hamburger_div}>
+          <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+            <div className={monuments_styles.h_div}></div>
+          </a>
+        </div>
       </div>
 
       <div className={styles.abide_left}>
@@ -152,7 +149,7 @@ const Monument = ({ monument }) => {
               abideEhemiyyet={monument.importance.name}
             />
           </div>
-          <p className={styles.vandalizm}>VANDALIZMƏ MƏRUZ QALMIŞDIR</p>
+          <p className={styles.vandalizm}>QEYD: VANDALIZMƏ MƏRUZ QALMIŞDIR</p>
           <p className={styles.abide_right_text}>{monument.content}</p>
         </div>
       </div>

@@ -142,6 +142,7 @@
   /* font-size: 0.9765625vw; */
   font-size: 1.9893899204244032vh;
   /* background-color: grey; */
+  
 }
 .districts_sub_rayonlar {
   font-family: Palatino Linotype;
@@ -176,4 +177,7 @@
     right: 20px;
     top: 45px;
   }
+}
+.meram_arrow {
+  cursor: pointer;
 }

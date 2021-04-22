@@ -44,6 +44,11 @@
   font-style: normal;
   font-weight: normal;
 }
+@media screen and (max-width: 767px) {
+  .search_input {
+    display: none;
+  }
+}
 .xerite {
   height: 80vh;
   max-width: 100%;

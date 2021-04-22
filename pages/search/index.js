@@ -117,34 +117,8 @@ const Search = ({ monuments }) => {
             return (
               <Link href={`/monument/${val.slug}`}>
                 <div className={search_style.result}>
-                  {/* {val.after_occupation ? (
-                      <img
-                        src={fromImageToUrl(val.after_occupation)}
-                        width={"100%"}
-                        height={"100%"}
-                        className={search_style.abide_img}
-                      />
-                    ) : val.before_occupation ? (
-                      <img
-                        src={fromImageToUrl(val.before_occupation)}
-                        width={"100%"}
-                        height={"100%"}
-                        className={search_style.abide_img}
-                      />
-                    ) : (
-                      <img
-                        src={fromImageToUrl(val.during_occupation)}
-                        width={"100%"}
-                        height={"100%"}
-                        className={search_style.abide_img}
-                      />
-                    )}
-                     */}
-
-                  {/* <div className={search_style.abide_info}> */}
                   <p className={search_style.name}>{val.name}</p>
                   <p className={search_style.content}>{val.content}</p>
-                  {/* </div> */}
                   <Divider />
                 </div>
               </Link>

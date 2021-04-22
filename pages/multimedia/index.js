@@ -5,6 +5,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import styles from "../districts/Districts.module.css";
 import monuments_styles from "../monuments/Monuments.module.css";
 import home_styles from "../../styles/Home.module.css";
+import meram_styles from "../../pages/meramimiz/Meram.module.css";
 
 // const monument = monuments[0];
 import { useState } from "react";
@@ -65,7 +66,7 @@ const Multimedia = ({ multis }) => {
       <div className={styles.districts_responsive}>
         <div className={monuments_styles.monuments_arrow}>
           <Link href="/districts">
-            <a>
+            <a onClick={() => router.back()}>
               <BsArrowLeft
                 size={"2.6525198938992043vh"}
                 className={monuments_styles.arrow}
@@ -74,7 +75,7 @@ const Multimedia = ({ multis }) => {
           </Link>
         </div>
         <p className={monuments_styles.monuments_rayonlar}>
-          Ana səhifə / Multimedia
+          <a href="/" className={meram_styles.meram_link}>Ana səhifə</a> / Multimedia
         </p>
         <p className={monuments_styles.monuments_sub_rayonlar}>Multimedia</p>
 

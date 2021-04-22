@@ -3,6 +3,7 @@
   stroke: black;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  z-index: 999;
 }
 .svg {
   height: 85vh;
@@ -14,15 +15,21 @@
   transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
 }
 
+.map_image {
+  pointer-events: none;
+}
+
 .path:hover {
   stroke: brown;
   stroke-width: 3px;
 
   transform: translateY(-3px);
 }
+
 .terter_path {
   pointer-events: none;
 }
+
 .xocali_path {
   pointer-events: none;
 }
