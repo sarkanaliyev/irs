@@ -22,7 +22,7 @@ export default function Districts({ districts }) {
 
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
+    // console.log("opennav");
   }
 
   function closeNav() {
