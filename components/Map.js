@@ -171,11 +171,11 @@ export default function Map({ className }) {
                 abideSlug: "hemze-soltan-sarayi",
                 abideIcon: "saray.svg",
               },
-              {
-                abideName: "Məlikəjdər türbəsi",
-                abideSlug: "melikejder-tuerbesi",
-                abideIcon: "Türbə.svg",
-              },
+              // {
+              //   abideName: "Məlikəjdər türbəsi",
+              //   abideSlug: "melikejder-tuerbesi",
+              //   abideIcon: "Türbə.svg",
+              // },
               {
                 abideName: "Cicimli kəndinin türbələri",
                 abideSlug: "cicimli-kendinin-tuerbeleri",
@@ -207,11 +207,11 @@ export default function Map({ className }) {
                 abideSlug: "m-scid-m-m-r-k-ndi",
                 abideIcon: "mosque.svg",
               },
-              {
-                abideName: "Qaçaq Nəbi və Həcərin heykəli",
-                abideSlug: "qacaq-n-bi-v-h-c-rin-heyk-li",
-                abideIcon: "heykel.svg",
-              },
+              // {
+              //   abideName: "Qaçaq Nəbi və Həcərin heykəli",
+              //   abideSlug: "qacaq-n-bi-v-h-c-rin-heyk-li",
+              //   abideIcon: "heykel.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.qubadli_path}`}

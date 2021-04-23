@@ -26,7 +26,7 @@ const Monuments = ({ monument }) => {
   const [content, setContent] = useState("apple content");
   const [category, setCategory] = useState(1);
 
-  const [firstChecked, setFirstChecked] = useState(false);
+  const [firstChecked, setFirstChecked] = useState(true);
   const [secondChecked, setSecondChecked] = useState(false);
   const [thirdChecked, setThirdChecked] = useState(false);
   const [fourthChecked, setFourthChecked] = useState(false);
@@ -64,7 +64,6 @@ const Monuments = ({ monument }) => {
     document.getElementById("myNav").style.height = "0%";
   }
   return (
- 
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
         <a href="/">
@@ -97,14 +96,14 @@ const Monuments = ({ monument }) => {
 
       <div className={styles.districts_responsive}>
         <div className={monuments_styles.monuments_arrow}>
-          <Link href="/districts">
-            <a>
-              <BsArrowLeft
-                size={"2.6525198938992043vh"}
-                className={monuments_styles.arrow}
-              />
-            </a>
-          </Link>
+          {/* <Link href="/districts"> */}
+          <a onClick={() => router.back()} className={styles.meram_arrow}>
+            <BsArrowLeft
+              size={"2.6525198938992043vh"}
+              className={monuments_styles.arrow}
+            />
+          </a>
+          {/* </Link> */}
         </div>
         <p className={monuments_styles.monuments_rayonlar}>
           Ana səhifə / Rayonlar / {monument.name}
@@ -215,7 +214,6 @@ const Monuments = ({ monument }) => {
               </label>
             </>
           )}
-         
         </div>
 
         <div className={styles.rayonlar_grid}>

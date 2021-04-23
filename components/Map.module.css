@@ -21,9 +21,9 @@
 
 .path:hover {
   stroke: brown;
-  stroke-width: 3px;
+  stroke-width: 4px;
 
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .terter_path {

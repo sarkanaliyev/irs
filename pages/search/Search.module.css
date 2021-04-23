@@ -23,6 +23,9 @@
   padding: 10px 20px;
   border-radius: 3px;
   font-size: 18px;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .btn {
@@ -94,10 +97,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-
 }
 
 .left_arrow {
   cursor: pointer;
 }
-

@@ -53,7 +53,6 @@ export default function Home({ districts }) {
           <img src="/logo.svg" />
         </a>
 
-        {/* <p className={districts_styles.districts_az}>AZ</p> */}
         <div className={styles.hamburger_div}>
           {/* <input
             className={styles.search_input}
@@ -80,23 +79,9 @@ export default function Home({ districts }) {
         </div>
       </div>
 
-      {/* <img className={styles.xerite} src="/xerite-transparant.png" /> */}
       <Map className={isOpen && styles.map_minimize} />
 
       <Menu />
-      {/* <div className={styles.slider}>
-        <div className={styles.previewcontainer}>
-          <ReactAudioPlayer src={susanitq} autoPlay={true} />
-
-          <div className={styles.speechcontainer}>
-            <p className={styles.speech}>Əziz Şuşa, sən azadsan!</p>
-            <p className={styles.speech1}> Əziz Şuşa, biz qayıtmışıq! </p>
-            <p className={styles.speech2}>Əziz Şuşa, biz səni dirçəldəcəyik!</p>
-          </div>
-          <p className={styles.president}>Ilham Əliyev</p>
-          <p className={styles.presidentx}>Azerbaycan Respublikasinin Prezidenti</p>
-        </div>
-      </div> */}
     </div>
   );
 }

@@ -19,12 +19,18 @@ const Search = ({ monuments }) => {
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState(`${router.query.keyword}`);
+
+  console.log(searchTerm);
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
 
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
+  }
+  let ph = "Axtar";
+  if (searchTerm) {
+    ph = searchTerm;
   }
   return (
     <div className={styles.districts_container}>
@@ -91,7 +97,7 @@ const Search = ({ monuments }) => {
             <input
               type="text"
               className={search_style.input}
-              placeholder="Axtar"
+              placeholder={ph}
               onChange={(event) => {
                 setSearchTerm(event.target.value);
               }}
@@ -102,6 +108,7 @@ const Search = ({ monuments }) => {
           .filter((val) => {
             if (searchTerm == "") {
               // return val;
+              // console.log("a")
             } else if (
               val.name.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
@@ -114,6 +121,7 @@ const Search = ({ monuments }) => {
                 <div className={search_style.result}>
                   <p className={search_style.name}>{val.name}</p>
                   <p className={search_style.content}>{val.content}</p>
+
                   <Divider />
                 </div>
               </Link>

@@ -43,7 +43,7 @@ const Filter = ({ importances, types }) => {
   const router = useRouter();
 
   const [radio, setRadio] = useState("apple");
-  const [content, setContent] = useState("apple content");
+  // const [content, setContent] = useState("apple content");
   const [category, setCategory] = useState(0);
 
   const [dropdown, setDropdown] = useState("apple");
@@ -103,7 +103,7 @@ const Filter = ({ importances, types }) => {
             className={filter_styles.select}
             value={dropdown}
             onChange={(e) => {
-              setContent(e.target.value);
+              // setContent(e.target.value);
               setDropdown(e.target.value);
               setRadio(e.target.value);
               setCategory(parseInt(e.target.value, 10));
@@ -115,28 +115,28 @@ const Filter = ({ importances, types }) => {
             <option style={{ display: "none" }} selected>
               Növ üzrə
             </option>
-            <option value="0">Məscid</option>
-            <option value="1">Qala</option>
-            <option value="2">Hamam</option>
-            <option value="3">Türbə</option>
-            <option value="4">Yaşayış yeri</option>
-            <option value="5">Malinkanə</option>
-            <option value="6">Monastr</option>
-            <option value="7">Saray</option>
+            <option value="12">Heykəl</option>
+            <option value="5">İmarət</option>
+            <option value="11">Karvansaray</option>
+            <option value="18">Körpü</option>
+            <option value="9">Malinkanə</option>
+            <option value="4">Məbəd</option>
+            <option value="10">Məktəb</option>
+            <option value="3">Məscid</option>
+            <option value="13">Monastr</option>
             <option value="8">Muzey</option>
-            <option value="9">Məktəb</option>
-            <option value="10">Karvansara</option>
-            <option value="11">Heykəl</option>
-            <option value="12">Məbəd</option>
-            <option value="13">İmarət</option>
-            <option value="14">Qəsr</option>
-            <option value="15">Qəbirüstü abidə</option>
-            <option value="16">Sərdabə</option>
-            <option value="17">Körpü</option>
-            <option value="18">Qəbiristanlıq</option>
-            <option value="19">Sığınacaq</option>
-            <option value="20">Bulaq</option>
-            <option value="21">Xatirə abidəsi</option>
+            <option value="16">Qala</option>
+            <option value="19">Qəbiristanlıq</option>
+            <option value="7">Qəbirüstü abidə</option>
+            <option value="6">Qəsr</option>
+            <option value="15">Sanatoriya</option>
+            <option value="14">Saray</option>
+            <option value="17">Sərdabə</option>
+            <option value="20">Sığınacaq</option>
+            <option value="1">Türbə</option>
+            <option value="0">Yaşayış evi</option>
+            <option value="2">Yaşayış yeri</option>
+            {/* <option value="21">Xatirə abidəsi</option> */}
             {/* <option value="5">Körpü</option>
             <option value="6">Körpü</option> */}
           </select>
@@ -148,7 +148,6 @@ const Filter = ({ importances, types }) => {
             id="myRadio1"
             onChange={(e) => {
               setRadio(e.target.value);
-              setContent("apple content");
               setCategory(0);
               handeFirst();
               setOptionClicked(false);
@@ -172,7 +171,6 @@ const Filter = ({ importances, types }) => {
             id="myRadio2"
             onChange={(e) => {
               setRadio(e.target.value);
-              setContent("orange content");
               setCategory(1);
               handeSecond();
               setOptionClicked(false);
@@ -194,7 +192,6 @@ const Filter = ({ importances, types }) => {
             id="myRadio3"
             onChange={(e) => {
               setRadio(e.target.value);
-              setContent("banana content");
               setCategory(2);
               handeThird();
               setOptionClicked(false);
@@ -208,8 +205,6 @@ const Filter = ({ importances, types }) => {
           >
             Yerli Əhəmiyyətli
           </label>
-
-          {/* <h1>Radio button is: {content}</h1> */}
         </div>
         <div className={styles.rayonlar_grid}>
           {optionClicked ? (
