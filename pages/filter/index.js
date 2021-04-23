@@ -136,7 +136,7 @@ const Filter = ({ importances, types }) => {
             <option value="1">Türbə</option>
             <option value="0">Yaşayış evi</option>
             <option value="2">Yaşayış yeri</option>
-            {/* <option value="21">Xatirə abidəsi</option> */}
+            <option value="21">Mağara</option>
             {/* <option value="5">Körpü</option>
             <option value="6">Körpü</option> */}
           </select>

@@ -101,18 +101,23 @@ const Monument = ({ monument }) => {
           <div class={styles.column}>
             <img src={"/frametop.svg"} />
             <a
-            // id="third"
-            // onClick={() => {
-            //   {
-            //     monument.after_occupation &&
-            //       (setCurrentImage(monument.after_occupation), handeThird());
-            //   }
-            // }}
+              href={`${monument.berpa_link}`}
+              // id="third"
+              // onClick={() => {
+              //   {
+              //     monument.after_occupation &&
+              //       (setCurrentImage(monument.after_occupation), handeThird());
+              //   }
+              // }}
             >
-              {monument.berpa_image ? (
-                <p className={styles.pa}>BƏRPA</p>
-              ) : (
+              {monument.berpa_link ? (
+                // <Link href={`${monument.berpa_link}`}>
                 <p className={styles.p}>BƏRPA</p>
+              ) : (
+                // </Link>
+                // <Link href={`${monument.berpa_link}`}>
+                  <p className={styles.pa}>BƏRPA</p>
+                // </Link>
               )}
               {/* <p className={styles.p}>BƏRPA</p> */}
             </a>

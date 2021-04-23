@@ -26,18 +26,16 @@
   transform: translateY(-2px);
 }
 
-.terter_path {
-  pointer-events: none;
-}
-/* .terter_path:hover ~ .terter {
+.terter_path:hover ~ .terter {
   opacity: 1;
-} */
-.xocali_path {
-  pointer-events: none;
 }
-.xocavend_path {
-  pointer-events: none;
+.xocavend_path:hover ~ .xocavend {
+  opacity: 1;
 }
+.xocali_path:hover ~ .xocali {
+  opacity: 1;
+}
+
 .fuzuli_path:hover ~ .fuzuli {
   opacity: 1;
 }

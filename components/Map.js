@@ -24,7 +24,7 @@ export default function Map({ className }) {
     let paths = document.querySelectorAll("svg > path");
 
     paths.forEach((element) => {
-      console.log(element.getAttribute)
+      console.log(element.getAttribute);
       element.addEventListener("click", () => {
         setIsOpen(true);
       });
@@ -255,7 +255,13 @@ export default function Map({ className }) {
           onClick={() => {
             setRayonName("Xocalı");
             setRayonSlug("xocali");
-            setAbideler([]);
+            setAbideler([
+              {
+                abideName: "Əsgəran qalası",
+                abideSlug: "sg-ran-qalasi",
+                abideIcon: "castle.svg",
+              },
+            ]);
           }}
           className={`${style.path} ${style.xocali_path}`}
           id="Xocalı"
@@ -265,7 +271,13 @@ export default function Map({ className }) {
           onClick={() => {
             setRayonName("Xocavənd");
             setRayonSlug("xocavend");
-            setAbideler([]);
+            setAbideler([
+              {
+                abideName: "Azıx mağarası",
+                abideSlug: "azix-magarasi",
+                abideIcon: "cave.svg",
+              },
+            ]);
           }}
           className={`${style.path} ${style.xocavend_path}`}
           id="Xocavənd"
@@ -306,7 +318,13 @@ export default function Map({ className }) {
           onClick={() => {
             setRayonName("Tərtər");
             setRayonSlug("terter");
-            setAbideler([]);
+            setAbideler([
+              {
+                abideName: "Məbəd (Talış kəndi)",
+                abideSlug: "m-b-d-talis-k-ndi",
+                abideIcon: "məbəd.svg",
+              },
+            ]);
           }}
           className={`${style.path} ${style.terter_path}`}
           id="Tərtər"
