@@ -104,18 +104,14 @@ const Monument = ({ monument }) => {
               href={`${monument.berpa_link}`}
               
             > */}
-              {monument.berpa_link ? (
-                // <Link href={`${monument.berpa_link}`}>
-                <a href={`${monument.berpa_link}`}>
-                  <p className={styles.p}>BƏRPA</p>
-                </a>
-              ) : (
-                // </Link>
-                // <Link href={`${monument.berpa_link}`}>
-                <p className={styles.pa}>BƏRPA</p>
-                // </Link>
-              )}
-              {/* <p className={styles.p}>BƏRPA</p> */}
+            {monument.berpa_link ? (
+              <a href={`${monument.berpa_link}`}>
+                <p className={styles.p}>BƏRPA</p>
+              </a>
+            ) : (
+              <p className={styles.pa}>BƏRPA</p>
+            )}
+            {/* <p className={styles.p}>BƏRPA</p> */}
             {/* </a> */}
             <img src={"/framebottom.svg"} />
           </div>
