@@ -35,7 +35,6 @@ const Monument = ({ monument }) => {
 
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {

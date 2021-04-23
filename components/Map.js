@@ -22,7 +22,6 @@ export default function Map({ className }) {
 
   useEffect(() => {
     let paths = document.querySelectorAll("svg > path");
-    console.log(paths);
 
     paths.forEach((element) => {
       element.addEventListener("click", () => {

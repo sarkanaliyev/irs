@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function MultimediaGrid(props) {
-  console.log(props.multis[0].image[0])
   const classes = useStyles();
   function FormRow() {
     return (

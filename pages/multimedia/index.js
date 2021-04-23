@@ -21,10 +21,8 @@ const Multimedia = ({ multis }) => {
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState();
-  console.log(multis[0].name);
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {

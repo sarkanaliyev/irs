@@ -16,21 +16,16 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 const Search = ({ monuments }) => {
-  console.log(monuments[0]);
   const router = useRouter();
-  console.log(router.query.keyword);
 
   const [searchTerm, setSearchTerm] = useState(`${router.query.keyword}`);
-  console.log(searchTerm);
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
-  console.log(monuments[0]);
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>

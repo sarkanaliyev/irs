@@ -13,7 +13,6 @@ import { useRouter } from "next/router";
 
 const Filter = ({ importances, types }) => {
   const [searchTerm, setSearchTerm] = useState();
-  console.log(types);
   const [firstChecked, setFirstChecked] = useState(true);
   const [secondChecked, setSecondChecked] = useState(false);
   const [thirdChecked, setThirdChecked] = useState(false);
@@ -48,17 +47,14 @@ const Filter = ({ importances, types }) => {
   const [category, setCategory] = useState(0);
 
   const [dropdown, setDropdown] = useState("apple");
-  console.log(importances[0].monuments);
 
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
-  console.log(types[0].slug);
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>

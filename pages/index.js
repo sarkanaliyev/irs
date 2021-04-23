@@ -31,7 +31,6 @@ export default function Home({ districts }) {
 
   useEffect(() => {
     let paths = document.querySelectorAll("svg > path");
-    console.log(paths);
 
     paths.forEach((element) => {
       element.addEventListener("click", () => {
@@ -42,7 +41,6 @@ export default function Home({ districts }) {
 
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {

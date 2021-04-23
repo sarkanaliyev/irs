@@ -18,7 +18,6 @@ const Meram = () => {
   const [searchTerm, setSearchTerm] = useState();
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {

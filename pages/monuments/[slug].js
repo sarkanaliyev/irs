@@ -21,12 +21,7 @@ const Monuments = ({ monument }) => {
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState();
-  monument.monuments.includes((monument) => {
-    console.log(monument.category);
-  });
-  console.log(monument.monuments.some((item) => item.category == "2"));
-  console.log(monument.monuments);
-  // console.log(monument.monuments[0].category)
+  monument.monuments.includes((monument) => {});
   const [radio, setRadio] = useState("apple");
   const [content, setContent] = useState("apple content");
   const [category, setCategory] = useState();
@@ -61,11 +56,8 @@ const Monuments = ({ monument }) => {
     setFourthChecked(true);
   };
 
-  console.log(monument.monuments);
-
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    console.log("opennav");
   }
 
   function closeNav() {
