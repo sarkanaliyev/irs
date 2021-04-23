@@ -100,27 +100,23 @@ const Monument = ({ monument }) => {
           </div>
           <div class={styles.column}>
             <img src={"/frametop.svg"} />
-            <a
+            {/* <a
               href={`${monument.berpa_link}`}
-              // id="third"
-              // onClick={() => {
-              //   {
-              //     monument.after_occupation &&
-              //       (setCurrentImage(monument.after_occupation), handeThird());
-              //   }
-              // }}
-            >
+              
+            > */}
               {monument.berpa_link ? (
                 // <Link href={`${monument.berpa_link}`}>
-                <p className={styles.p}>BƏRPA</p>
+                <a href={`${monument.berpa_link}`}>
+                  <p className={styles.p}>BƏRPA</p>
+                </a>
               ) : (
                 // </Link>
                 // <Link href={`${monument.berpa_link}`}>
-                  <p className={styles.pa}>BƏRPA</p>
+                <p className={styles.pa}>BƏRPA</p>
                 // </Link>
               )}
               {/* <p className={styles.p}>BƏRPA</p> */}
-            </a>
+            {/* </a> */}
             <img src={"/framebottom.svg"} />
           </div>
           <div class={styles.column}>
