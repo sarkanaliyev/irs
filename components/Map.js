@@ -24,11 +24,13 @@ export default function Map({ className }) {
     let paths = document.querySelectorAll("svg > path");
 
     paths.forEach((element) => {
+      console.log(element.getAttribute)
       element.addEventListener("click", () => {
         setIsOpen(true);
       });
     });
   }, []);
+
   return (
     <>
       <svg

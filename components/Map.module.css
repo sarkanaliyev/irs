@@ -29,7 +29,9 @@
 .terter_path {
   pointer-events: none;
 }
-
+/* .terter_path:hover ~ .terter {
+  opacity: 1;
+} */
 .xocali_path {
   pointer-events: none;
 }

@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: initial;
   /* background-color: red; */
 }
 
@@ -36,12 +37,15 @@
   /* margin-top: 15%; */
   height: 70vh;
   width: 100%;
+  cursor: url("/bulbul.png"), auto;
 }
 .abide_right {
   width: 40%;
   height: 100vh;
   float: right;
   overflow-y: auto;
+  cursor: initial;
+
   /* background-color: green; */
 }
 
@@ -49,11 +53,13 @@
   margin-top: 20%;
   margin-right: 7%;
   margin-left: 7%;
+  
   /* height: 100vh; */
   /* background-color: white; */
 }
 .arrow_a {
   cursor: pointer;
+  z-index: 9;
 }
 .arrow_a:hover {
   color: blue;
