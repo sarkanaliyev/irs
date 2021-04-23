@@ -16,6 +16,7 @@ export default function AbidelerGrid(props) {
   const classes = useStyles();
 
   let variable;
+  console.log(props.monuments);
 
   function FormRow() {
     // {

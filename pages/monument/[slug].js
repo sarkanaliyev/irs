@@ -109,7 +109,12 @@ const Monument = ({ monument }) => {
             //   }
             // }}
             >
-              <p className={styles.p}>BƏRPA</p>
+              {monument.berpa_image ? (
+                <p className={styles.pa}>BƏRPA</p>
+              ) : (
+                <p className={styles.p}>BƏRPA</p>
+              )}
+              {/* <p className={styles.p}>BƏRPA</p> */}
             </a>
             <img src={"/framebottom.svg"} />
           </div>
