@@ -24,7 +24,7 @@ const Monuments = ({ monument }) => {
   monument.monuments.includes((monument) => {});
   const [radio, setRadio] = useState("apple");
   const [content, setContent] = useState("apple content");
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState(1);
 
   const [firstChecked, setFirstChecked] = useState(false);
   const [secondChecked, setSecondChecked] = useState(false);
@@ -64,22 +64,12 @@ const Monuments = ({ monument }) => {
     document.getElementById("myNav").style.height = "0%";
   }
   return (
-    // <div>
-    //   <a>
-    //     {monument.monuments.map((mon) => (
-    //       <>
-    //         <h3>{mon.name}</h3>
-    //         <img src={fromImageToUrl(mon.during_occupation)} />
-    //       </>
-    //     ))}
-    //   </a>
-    // </div>
+ 
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
         <a href="/">
           <img src="/logo.svg" />
         </a>
-        {/* <p className={styles.districts_az}>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
           <input
             className={home_styles.search_input}
@@ -225,28 +215,7 @@ const Monuments = ({ monument }) => {
               </label>
             </>
           )}
-          {/* <input
-            type="text"
-            placeholder="Axtar.."
-            className={monuments_styles.search_input}
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-            onKeyPress={(event) => {
-              if (event.key === "Enter") {
-                router.push({
-                  pathname: "/search",
-                  query: { keyword: searchTerm },
-                });
-              }
-            }}
-          /> */}
-
-          {/* <Link href={{ pathname: "/search", query: { keyword: searchTerm } }}>
-            <button type="submit">axtar</button>
-          </Link> */}
-
-          {/* <h1>Radio button is: {content}</h1> */}
+         
         </div>
 
         <div className={styles.rayonlar_grid}>
