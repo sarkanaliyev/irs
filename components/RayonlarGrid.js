@@ -27,7 +27,7 @@ export default function RayonlarGrid(props) {
     return (
       <React.Fragment>
         {props.districts.map((value) => (
-          <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+          <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
             {/* <a href={value.route}> */}
             <Link href={`/monuments/${value.slug}`}>
               <a>
