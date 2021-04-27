@@ -109,10 +109,13 @@
     color: white;
   }
   .menu_container {
-    margin-left: 10%;
+    /* margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50%;
-
+    margin-top: 50%; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
     /* background: red; */
     /* height: 10vh; */
   }
