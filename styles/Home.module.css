@@ -44,11 +44,6 @@
   font-style: normal;
   font-weight: normal;
 }
-@media screen and (max-width: 767px) {
-  .search_input {
-    display: none;
-  }
-}
 .xerite {
   height: 80vh;
   max-width: 100%;
@@ -313,4 +308,41 @@
 .right_slider_ul li span {
   padding-left: 20px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .search_input {
+    display: none;
+  }
+  .right_slider {
+    height: 40vh;
+    width: 100vw;
+    transition: bottom 0.5s ease-in;
+    bottom: -40vh;
+    border-left: unset !important;
+    overflow: auto;
+  }
+  .right_slider_active {
+    bottom: 0;
+  }
+
+  .map_minimize {
+    top: 35% !important;
+    height: 42vh !important;
+    left: 50% !important;
+  }
+
+  .right_slider_main {
+    margin-top: 0;
+  }
+  .right_slider_rayon {
+    font-size: 24px;
+  }
+  .right_slider_ul li a {
+    font-size: 18px;
+  }
+  .right_slider_ul li img {
+    width: 40px;
+    height: 40px;
+  }
 }
