@@ -16,6 +16,7 @@ import Menu from "../../components/Menu.js";
 
 import { useRouter } from "next/router";
 import home_styles from "../../styles/Home.module.css";
+import meram_styles from "../../pages/meramimiz/Meram.module.css";
 
 const Monuments = ({ monument }) => {
   const router = useRouter();
@@ -106,7 +107,13 @@ const Monuments = ({ monument }) => {
           {/* </Link> */}
         </div>
         <p className={monuments_styles.monuments_rayonlar}>
-          Ana səhifə / Rayonlar / {monument.name}
+          <a href="/" className={meram_styles.meram_link}>
+            Ana səhifə
+          </a>
+          <a href="/districts" className={meram_styles.meram_link}>
+            / Rayonlar
+          </a>
+          / {monument.name}
         </p>
         <p className={monuments_styles.monuments_sub_rayonlar}>Abidələr</p>
 

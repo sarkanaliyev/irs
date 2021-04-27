@@ -72,7 +72,7 @@
 }
 
 .menu_container ul div p:hover {
-  color: blue;
+  color: aqua;
 }
 
 .menu_container ul div h1 {
@@ -84,7 +84,7 @@
   color: white;
 }
 .menu_container ul div h1:hover {
-  color: blue;
+  color: aqua;
 }
 .menu-container ul div p {
   font-family: TT Norms Pro;

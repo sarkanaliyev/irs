@@ -9,6 +9,7 @@ import monuments_styles from "../monuments/Monuments.module.css";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import home_styles from "../../styles/Home.module.css";
+import meram_styles from "../../pages/meramimiz/Meram.module.css";
 
 export default function Districts({ districts }) {
   const router = useRouter();
@@ -59,7 +60,12 @@ export default function Districts({ districts }) {
       </div>
 
       <div className={styles.districts_responsive}>
-        <p className={styles.districts_rayonlar}>Ana səhifə / Rayonlar</p>
+        <p className={styles.districts_rayonlar}>
+          <a href="/" className={meram_styles.meram_link}>
+            Ana səhifə
+          </a>
+          / Rayonlar
+        </p>
         <p className={styles.districts_sub_rayonlar}>Rayonlar</p>
         <div className={styles.rayonlar_grid}>
           <RayonlarGrid districts={districts} />

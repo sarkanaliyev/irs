@@ -79,7 +79,10 @@ const Search = ({ monuments }) => {
           {/* </Link> */}
         </div>
         <p className={monuments_styles.monuments_rayonlar}>
-          Ana səhifə / Axtarış
+          <a href="/" className={meram_styles.meram_link}>
+            Ana səhifə
+          </a>
+          / Axtarış
         </p>
         <p className={monuments_styles.monuments_sub_rayonlar}>Axtarış</p>
         <div

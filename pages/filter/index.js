@@ -10,6 +10,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import ImportanceGrid from "../../components/ImportanceGrid";
 import Menu from "../../components/Menu.js";
 import { useRouter } from "next/router";
+import meram_styles from "../../pages/meramimiz/Meram.module.css";
 
 const Filter = ({ importances, types }) => {
   const [searchTerm, setSearchTerm] = useState();
@@ -94,7 +95,10 @@ const Filter = ({ importances, types }) => {
           </a>
         </div>
         <p className={monuments_styles.monuments_rayonlar}>
-          Ana səhifə / Abidələr
+          <a href="/" className={meram_styles.meram_link}>
+            Ana səhifə
+          </a>
+          / Abidələr
         </p>
         <p className={monuments_styles.monuments_sub_rayonlar}>Abidələr</p>
 
