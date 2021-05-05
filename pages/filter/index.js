@@ -180,6 +180,7 @@ const Filter = ({ importances, types }) => {
               setOptionClicked(false);
               setInputClicked(true);
             }}
+            checked={secondChecked}
           />
           <label
             className={monuments_styles.radio__label}
@@ -201,6 +202,7 @@ const Filter = ({ importances, types }) => {
               setOptionClicked(false);
               setInputClicked(true);
             }}
+            checked={thirdChecked}
           />
           <label
             className={monuments_styles.radio__label}
