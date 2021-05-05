@@ -25,11 +25,11 @@ const Monuments = ({ monument }) => {
   monument.monuments.includes((monument) => {});
   const [radio, setRadio] = useState("apple");
   const [content, setContent] = useState("apple content");
-  const [category, setCategory] = useState(1);
-
-  const [firstChecked, setFirstChecked] = useState(true);
+  const [category, setCategory] = useState(monument.monuments.some((item) => item.category == "3")&&!monument.monuments.some((item) => item.category == "1")?3:1);
+  // const [category, setCategory] = useState(1);
+  const [firstChecked, setFirstChecked] = useState(monument.monuments.some((item) => item.category == "3")&&!monument.monuments.some((item) => item.category == "1")?false:true);
   const [secondChecked, setSecondChecked] = useState(false);
-  const [thirdChecked, setThirdChecked] = useState(false);
+  const [thirdChecked, setThirdChecked] = useState(monument.monuments.some((item) => item.category == "3")&&!monument.monuments.some((item) => item.category == "1")?true:false);
   const [fourthChecked, setFourthChecked] = useState(false);
 
   const handeFirst = () => {
@@ -64,6 +64,8 @@ const Monuments = ({ monument }) => {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
+
+
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
@@ -195,6 +197,8 @@ const Monuments = ({ monument }) => {
                   setCategory(3);
                   handeThird();
                 }}
+                                checked={thirdChecked}
+
               />
               <label className={monuments_styles.radio__label} for="myRadio3">
                 ARXEOLOJİ ABİBƏLƏR
