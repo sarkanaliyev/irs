@@ -113,19 +113,25 @@ const Monument = ({ monument }) => {
               href={`${monument.berpa_link}`}
               
             > */}
-            {monument.berpa_image ? (
-              <a
-                id="fourth"
-                // href={`${monument.berpa_link}`}
-                onClick={() => {
-                  setCurrentImage(monument.berpa_image[0]), handeFourth();
-                }}
-              >
+
+            <a
+              id="fourth"
+              // href={`${monument.berpa_link}`}
+              onClick={() => {
+                {
+                  monument.berpa_image[0] &&
+                    setCurrentImage(monument.berpa_image[0]),
+                    handeFourth();
+                }
+              }}
+            >
+              {monument.berpa_image[0] ? (
                 <p className={styles.p}>BƏRPA</p>
-              </a>
-            ) : (
-              <p className={styles.pa}>BƏRPA</p>
-            )}
+              ) : (
+                <p className={styles.pa}>BƏRPA</p>
+              )}
+            </a>
+
             {/* <p className={styles.p}>BƏRPA</p> */}
             {/* </a> */}
             <img src={"/framebottom.svg"} />
