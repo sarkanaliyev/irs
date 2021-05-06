@@ -18,16 +18,25 @@ const Monument = ({ monument }) => {
     document.getElementById("first").style.color = "white";
     document.getElementById("second").style.color = "#3a3d3f";
     document.getElementById("third").style.color = "#3a3d3f";
+    document.getElementById("fourth").style.color = "#3a3d3f";
   };
   const handeSecond = () => {
     document.getElementById("first").style.color = "#3a3d3f";
     document.getElementById("second").style.color = "white";
     document.getElementById("third").style.color = "#3a3d3f";
+    document.getElementById("fourth").style.color = "#3a3d3f";
   };
   const handeThird = () => {
     document.getElementById("first").style.color = "#3a3d3f";
     document.getElementById("second").style.color = "#3a3d3f";
     document.getElementById("third").style.color = "white";
+    document.getElementById("fourth").style.color = "#3a3d3f";
+  };
+  const handeFourth = () => {
+    document.getElementById("first").style.color = "#3a3d3f";
+    document.getElementById("second").style.color = "#3a3d3f";
+    document.getElementById("third").style.color = "#3a3d3f";
+    document.getElementById("fourth").style.color = "white";
   };
   const router = useRouter();
 
@@ -105,7 +114,13 @@ const Monument = ({ monument }) => {
               
             > */}
             {monument.berpa_image ? (
-              <a href={`${monument.berpa_link}`}>
+              <a
+                id="fourth"
+                // href={`${monument.berpa_link}`}
+                onClick={() => {
+                  setCurrentImage(monument.berpa_image[0]), handeFourth();
+                }}
+              >
                 <p className={styles.p}>BƏRPA</p>
               </a>
             ) : (
