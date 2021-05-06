@@ -104,7 +104,7 @@ const Monument = ({ monument }) => {
               href={`${monument.berpa_link}`}
               
             > */}
-            {monument.berpa_link ? (
+            {monument.berpa_image ? (
               <a href={`${monument.berpa_link}`}>
                 <p className={styles.p}>BƏRPA</p>
               </a>
