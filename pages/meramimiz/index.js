@@ -26,12 +26,21 @@ const Meram = () => {
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
-        <a href="/">
-          <img src="/logo.svg" />
-        </a>
+        <div className={monuments_styles.nazirlik}>
+          <a href="/">
+            <img src="/logo.svg" />
+          </a>
+        </div>
+        <div className={monuments_styles.quote_div}>
+          <a className={monuments_styles.quote}>
+            "Tarİxİ olduğu kİmİ qəbul etmək, dərk etmək və olduğu kİmİ
+            qİymətləndİrmək lazımdır"
+          </a>
+          <a className={monuments_styles.heyder_eliyev}>Heydər Əliyev</a>
+        </div>
         {/* <p className={styles.districts_az}>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
-          <input
+          {/* <input
             className={home_styles.search_input}
             type="text"
             placeholder="Axtar..."
@@ -46,7 +55,7 @@ const Meram = () => {
                 });
               }
             }}
-          />
+          /> */}
           <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
             <div className={monuments_styles.h_div}></div>
             <div className={monuments_styles.h_div}></div>

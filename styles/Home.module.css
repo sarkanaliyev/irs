@@ -1,3 +1,12 @@
+.slogan {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  color: #fff;
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -233,8 +242,8 @@
 }
 
 .map_minimize {
-  left: 30% !important;
-  height: 82vh !important;
+  left: -15% !important;
+  /* height: 82vh !important; */
 }
 .right_slider_main {
   margin-top: 15%;
@@ -310,7 +319,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .search_input {
     display: none;
   }
@@ -344,5 +353,8 @@
   .right_slider_ul li img {
     width: 40px;
     height: 40px;
+  }
+  .slogan {
+    display: none;
   }
 }

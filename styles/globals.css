@@ -8,7 +8,7 @@ body {
   background-size: cover;
   /* background-color: rgb(55, 56, 16); */
   cursor: url("/bulbul.png"), auto;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 a {

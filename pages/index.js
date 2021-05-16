@@ -52,7 +52,9 @@ export default function Home({ districts }) {
         <a href="/">
           <img src="/logo.svg" />
         </a>
-
+        <a className={styles.slogan}>
+          Azərbaycan mİllİ İrsİnə qarşı soyqırım, bəşərİ İrsə qarşı soyqırımdır!
+        </a>
         <div className={styles.hamburger_div}>
           {/* <input
             className={styles.search_input}

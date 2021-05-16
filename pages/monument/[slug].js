@@ -52,9 +52,11 @@ const Monument = ({ monument }) => {
   return (
     <div>
       <div className={monuments_styles.monument_heykel}>
-        <a href="/" className={monuments_styles.monument_a}>
-          <img src="/logo.svg" className={monuments_styles.monument_logo} />
-        </a>
+        {/* <div className={monuments_styles.nazirlik}> */}
+          <a href="/" className={monuments_styles.monument_a}>
+            <img src="/logo.svg" className={monuments_styles.monument_logo} />
+          </a>
+        {/* </div> */}
         <div className={monuments_styles.hamburger_div}>
           <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
             <div className={monuments_styles.h_div}></div>

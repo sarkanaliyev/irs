@@ -19,19 +19,19 @@ export default function MultimediaGrid(props) {
         {props.multis.map((value) => (
           <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
             <Link href={`${value.url}`}>
-            <a>
-              <div className={rayonlar_styles.nested_rayon}>
-                <div
-                  className={rayonlar_styles.multi_img_holder}
-                  style={{
-                    backgroundImage: `linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%),url(${fromImageToUrl(
-                      value.image[0]
-                    )})`,
-                  }}
-                ></div>
-              </div>
-              <p className={styles.abide_ad}>{value.name}</p>
-            </a>
+              <a>
+                <div className={rayonlar_styles.nested_rayon}>
+                  <div
+                    className={rayonlar_styles.multi_img_holder}
+                    style={{
+                      backgroundImage: `linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%),url(${fromImageToUrl(
+                        value.image[0]
+                      )})`,
+                    }}
+                  ></div>
+                </div>
+                <p className={styles.abide_ad}>{value.name}</p>
+              </a>
             </Link>
           </Grid>
         ))}

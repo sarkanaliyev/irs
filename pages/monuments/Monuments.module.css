@@ -1,22 +1,56 @@
 .districts_heykel {
   position: relative;
   width: 100%;
-  height: 15vh;
+  height: 37vh;
   background-image: linear-gradient(
       180deg,
       #000000 -112.64%,
       rgba(0, 0, 0, 0) 100%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url("/kelbecer.png");
+    url("/heyder_eliyev.png");
   background-size: cover;
+  background-repeat: no-repeat;
   cursor: initial;
   background-position: center;
   /* background: linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 76.08%, rgba(0, 0, 0, 0.1) 76.08%); */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 30px 3%;
+}
+.quote {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: table-cell;
+  padding-bottom: 1.171875vw;
+  font-size: 1.171875vw;
+}
+.quote_div {
+  /* background-color: red; */
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heyder_eliyev {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.171875vw;
+}
+.nazirlik {
+  display: table;
 }
 .monument_heykel {
   position: absolute;
@@ -42,14 +76,18 @@
 }
 
 .hamburger_div {
-  display: flex;
+  display: table;
+  z-index: 1;
 
+  /* background-color: red; */
+  /* vertical-align: middle; */
   /* width: 42px;
   height: 16px; */
   /* padding: 0px 0px; */
+  /* padding-top: 50px; */
 }
 .hamburger {
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 .h_div {
   width: 42px;
@@ -198,5 +236,21 @@
     color: #3a3d3f;
 
     width: 100%;
+  }
+  .quote {
+    display: none;
+  }
+  .quote_div {
+    display: none;
+  }
+  .heyder_eliyev {
+    display: none;
+  }
+
+  .districts_heykel {
+    height: auto;
+  }
+   .radio__label {
+    margin-bottom: 10px;
   }
 }

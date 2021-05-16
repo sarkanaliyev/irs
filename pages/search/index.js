@@ -35,9 +35,11 @@ const Search = ({ monuments }) => {
   return (
     <div className={styles.districts_container}>
       <div className={monuments_styles.districts_heykel}>
-        <a href="/">
-          <img src="/logo.svg" />
-        </a>
+        <div className={monuments_styles.nazirlik}>
+          <a href="/">
+            <img src="/logo.svg" />
+          </a>
+        </div>
         {/* <p className={styles.districts_az}>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
           {/* <input
