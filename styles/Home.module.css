@@ -338,9 +338,9 @@
   .map_minimize {
     /* left: -25%; */
     /* top: -65%; */
-    top: -30% !important;
-    height: 100% !important;
-    /* width: 250%; */
+    top: -80% !important;
+    height: 200% !important;
+    width: 250% !important;
     /* height: 42vh !important; */
     left: -25% !important;
   }
