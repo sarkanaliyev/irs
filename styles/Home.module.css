@@ -336,9 +336,11 @@
   }
 
   .map_minimize {
-    top: 35% !important;
-    height: 42vh !important;
-    left: 50% !important;
+    /* left: -25%; */
+    /* top: -65%; */
+    top: -80% !important;
+    /* height: 42vh !important; */
+    left: -25% !important;
   }
 
   .right_slider_main {
@@ -357,4 +359,8 @@
   .slogan {
     display: none;
   }
+  /* .home_top {
+    position: fixed;
+    min-width: 100%;
+  } */
 }
