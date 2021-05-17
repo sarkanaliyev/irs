@@ -20,7 +20,6 @@ const Search = ({ monuments }) => {
 
   const [searchTerm, setSearchTerm] = useState(`${router.query.keyword}`);
 
-  console.log(searchTerm);
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
@@ -113,7 +112,6 @@ const Search = ({ monuments }) => {
           .filter((val) => {
             if (searchTerm == "") {
               // return val;
-              // console.log("a")
             } else if (
               val.name.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
