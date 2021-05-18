@@ -39,7 +39,7 @@ export default function AbidelerGrid(props) {
                         className={rayonlar_styles.img_holder}
                         style={{
                           backgroundImage: `linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%),url(${fromImageToUrl(
-                            value.before_occupation
+                            value.before_occupation.formats.thumbnail
                           )})`,
                         }}
                       ></div>
@@ -48,7 +48,7 @@ export default function AbidelerGrid(props) {
                         className={rayonlar_styles.img_holder}
                         style={{
                           backgroundImage: `linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%),url(${fromImageToUrl(
-                            value.after_occupation
+                            value.after_occupation.formats.thumbnail
                           )})`,
                         }}
                       ></div>
@@ -57,7 +57,7 @@ export default function AbidelerGrid(props) {
                         className={rayonlar_styles.img_holder}
                         style={{
                           backgroundImage: `linear-gradient(180deg, #000000 -112.64%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%),url(${fromImageToUrl(
-                            value.during_occupation
+                            value.during_occupation.formats.thumbnail
                           )})`,
                         }}
                       ></div>

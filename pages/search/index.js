@@ -27,6 +27,7 @@ const Search = ({ monuments }) => {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
+  
   let ph = "Axtar";
   if (searchTerm) {
     ph = searchTerm;
