@@ -250,6 +250,8 @@
 
   .districts_heykel {
     height: auto;
+    align-items: center;
+
     /* background-position-x: 100%; */
   }
   .radio__label {
