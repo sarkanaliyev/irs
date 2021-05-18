@@ -73,7 +73,7 @@ const Filter = ({ importances, types }) => {
         </div>
         {/* <p className={styles.districts_az}>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
-          {/* <input
+          <input
             className={home_styles.search_input}
             type="text"
             placeholder="Axtar..."
@@ -88,7 +88,7 @@ const Filter = ({ importances, types }) => {
                 });
               }
             }}
-          /> */}
+          />
           <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
             <div className={monuments_styles.h_div}></div>
             <div className={monuments_styles.h_div}></div>

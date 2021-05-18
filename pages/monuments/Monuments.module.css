@@ -79,16 +79,17 @@
 .hamburger_div {
   /* display: table; */
   z-index: 1;
-
+  display: flex;
   /* background-color: red; */
   /* vertical-align: middle; */
   /* width: 42px;
   height: 16px; */
   /* padding: 0px 0px; */
   /* padding-top: 50px; */
+  height: fit-content;
 }
 .hamburger {
-  /* padding-left: 20px; */
+  padding-left: 20px;
 }
 .h_div {
   width: 42px;

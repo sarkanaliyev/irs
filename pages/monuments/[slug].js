@@ -96,22 +96,22 @@ const Monuments = ({ monument }) => {
           <a className={monuments_styles.heyder_eliyev}>Heydər Əliyev</a>
         </div>
         <div className={monuments_styles.hamburger_div}>
-          {/* <input
-            className={home_styles.search_input}
-            type="text"
-            placeholder="Axtar..."
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-            onKeyPress={(event) => {
-              if (event.key === "Enter") {
-                router.push({
-                  pathname: "/search",
-                  query: { keyword: searchTerm },
-                });
-              }
-            }}
-          /> */}
+            <input
+              className={home_styles.search_input}
+              type="text"
+              placeholder="Axtar..."
+              onChange={(event) => {
+                setSearchTerm(event.target.value);
+              }}
+              onKeyPress={(event) => {
+                if (event.key === "Enter") {
+                  router.push({
+                    pathname: "/search",
+                    query: { keyword: searchTerm },
+                  });
+                }
+              }}
+            />
           <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
             <div className={monuments_styles.h_div}></div>
             <div className={monuments_styles.h_div}></div>
