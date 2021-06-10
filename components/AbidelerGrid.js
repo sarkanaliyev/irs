@@ -29,6 +29,9 @@ export default function AbidelerGrid(props) {
       <React.Fragment>
         {props.monuments
           .filter((member) => member.category === props.category)
+          .sort(function (a, b) {
+            return a.name.localeCompare(b.name);
+          })
           .map((value) => (
             <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
               <Link href={`/monument/${value.slug}`}>
