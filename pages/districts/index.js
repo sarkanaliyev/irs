@@ -11,7 +11,53 @@ import { useRouter } from "next/router";
 import home_styles from "../../styles/Home.module.css";
 import meram_styles from "../../pages/meramimiz/Meram.module.css";
 
-export default function Districts({ districts }) {
+export default function Districts({ districts, monuments }) {
+  const new_monument_arr = [
+    {
+      name: monuments.map((item) => item.name),
+      slug: monuments.map((item) => item.slug),
+    },
+  ];
+  const [suggestions, setSuggestions] = useState([]);
+  const [text, setText] = useState("");
+
+  const onTextChanged = (e) => {
+    const value = e.target.value;
+    let suggestions = [];
+    if (value.length > 0) {
+      const regex = new RegExp(`^${value}`, "i");
+      suggestions = new_monument_arr[0].name
+        .sort()
+        .filter((v) => regex.test(v));
+    }
+    setSuggestions(suggestions);
+    setText(value);
+  };
+
+  const suggestionSelected = (value) => {
+    setText(new_monument_arr[0].slug[new_monument_arr[0].name.indexOf(value)]);
+    setSuggestions([]);
+  };
+
+  const renderSuggestions = () => {
+    if (suggestions.length === 0) {
+      return null;
+    }
+    return (
+      <ul>
+        {suggestions.map((item) => (
+          <Link
+            href={`/monument/${
+              new_monument_arr[0].slug[new_monument_arr[0].name.indexOf(item)]
+            }`}
+          >
+            <li onClick={() => suggestionSelected(item)}>{item}</li>
+          </Link>
+        ))}
+      </ul>
+    );
+  };
+
   const router = useRouter();
 
   const [searchTerm, setSearchTerm] = useState();
@@ -45,22 +91,16 @@ export default function Districts({ districts }) {
         {/* <p className={styles.districts_az}>AZ</p> */}
         {/* <p>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
-          <input
-            className={home_styles.search_input}
-            type="text"
-            placeholder="Axtar..."
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-            onKeyPress={(event) => {
-              if (event.key === "Enter") {
-                router.push({
-                  pathname: "/search",
-                  query: { keyword: searchTerm },
-                });
-              }
-            }}
-          />
+          <div className={home_styles.search_div}>
+            <input
+              className={home_styles.search_input}
+              type="text"
+              placeholder="Abidə axtar..."
+              // value={text}
+              onChange={onTextChanged}
+            />
+            {renderSuggestions()}
+          </div>
           <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
             <div className={monuments_styles.h_div}></div>
             <div className={monuments_styles.h_div}></div>
@@ -72,7 +112,7 @@ export default function Districts({ districts }) {
       <div className={styles.districts_responsive}>
         <p className={styles.districts_rayonlar}>
           <a href="/" className={meram_styles.meram_link}>
-            Ana səhifə
+            Ana səhifə&nbsp;
           </a>
           / Rayonlar
         </p>
@@ -90,9 +130,13 @@ export async function getStaticProps() {
   const district_res = await fetch(`${API_URL}/districts`);
   const districts = await district_res.json();
 
+  const monuments_res = await fetch(`${API_URL}/monuments/`);
+  const monuments = await monuments_res.json();
+
   return {
     props: {
       districts,
+      monuments
     },
   };
 }

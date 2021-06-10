@@ -47,12 +47,45 @@
   background-color: white;
   margin: 6px 0px;
 }
+.search_div {
+  margin: auto;
+}
 .search_input {
   border-radius: 5px;
   font-family: Palatino Linotype;
   font-style: normal;
   font-weight: normal;
+
+  width: 100%;
+  /* border: none; */
+  /* padding: 10px 5px; */
+  box-sizing: border-box;
+  outline: none;
 }
+
+/* .search_div ul::before {
+  content: "";
+} */
+.search_div ul {
+  margin: 0;
+  padding: 0;
+}
+.search_div ul li {
+  list-style-type: none;
+  text-align: left;
+  margin: 1px;
+  padding: 2px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+
+  /* width: 100%; */
+}
+
+.search_div li:hover {
+  background-color: orange;
+}
+
 .xerite {
   height: 80vh;
   max-width: 100%;

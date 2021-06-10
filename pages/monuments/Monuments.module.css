@@ -103,8 +103,10 @@
   font-style: normal;
   font-weight: normal;
 }
+
 .monuments_arrow {
   padding-top: 20px;
+  z-index: 999;
 }
 .arrow:hover {
   color: blue;

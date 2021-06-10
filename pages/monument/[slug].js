@@ -53,9 +53,9 @@ const Monument = ({ monument }) => {
     <div>
       <div className={monuments_styles.monument_heykel}>
         {/* <div className={monuments_styles.nazirlik}> */}
-          <a href="/" className={monuments_styles.monument_a}>
-            <img src="/logo.svg" className={monuments_styles.monument_logo} />
-          </a>
+        <a href="/" className={monuments_styles.monument_a}>
+          <img src="/logo.svg" className={monuments_styles.monument_logo} />
+        </a>
         {/* </div> */}
         <div className={monuments_styles.hamburger_div}>
           <a href="#" className={monuments_styles.hamburger} onClick={openNav}>
@@ -80,7 +80,8 @@ const Monument = ({ monument }) => {
               onClick={() => {
                 {
                   monument.before_occupation &&
-                    (setCurrentImage(monument.before_occupation), handeFirst());
+                    (setCurrentImage(monument.before_occupation),
+                    handeFirst());
                 }
               }}
             >
@@ -145,7 +146,10 @@ const Monument = ({ monument }) => {
               onClick={() => {
                 {
                   monument.after_occupation &&
-                    (setCurrentImage(monument.after_occupation), handeThird());
+                    (setCurrentImage(
+                      monument.after_occupation
+                    ),
+                    handeThird());
                 }
               }}
             >
