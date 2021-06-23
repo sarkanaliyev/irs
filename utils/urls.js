@@ -1,6 +1,5 @@
-export const API_URL =
-  // process.env.NEXT_PUBLIC_API_URL || "https://abide.inetlab.info";
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || "10.2.214.2";
+  // process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
 // export const API_URL =
 //   process.env.NEXT_PUBLIC_API_URL ||
 //   "http://obscure-stream-64285.herokuapp.com/";
