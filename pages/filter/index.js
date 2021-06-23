@@ -92,7 +92,7 @@ const Filter = ({ importances, types, monuments }) => {
 
   const [radio, setRadio] = useState("apple");
   // const [content, setContent] = useState("apple content");
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState(2);
 
   const [dropdown, setDropdown] = useState("apple");
 
@@ -160,7 +160,7 @@ const Filter = ({ importances, types, monuments }) => {
               // setContent(e.target.value);
               setDropdown(e.target.value);
               setRadio(e.target.value);
-              setCategory(parseInt(e.target.value, 10));
+              setCategory(parseInt(e.target.value - 1, 10));
               setOptionClicked(true);
               setInputClicked(false);
               handeFourth();
@@ -169,30 +169,10 @@ const Filter = ({ importances, types, monuments }) => {
             <option style={{ display: "none" }} selected>
               Növ üzrə
             </option>
-            <option value="12">Heykəl</option>
-            <option value="5">İmarət</option>
-            <option value="11">Karvansaray</option>
-            <option value="18">Körpü</option>
-            <option value="9">Malinkanə</option>
-            <option value="4">Məbəd</option>
-            <option value="10">Məktəb</option>
-            <option value="3">Məscid</option>
-            <option value="13">Monastr</option>
-            <option value="8">Muzey</option>
-            <option value="16">Qala</option>
-            <option value="19">Qəbiristanlıq</option>
-            <option value="7">Qəbirüstü abidə</option>
-            <option value="6">Qəsr</option>
-            <option value="15">Sanatoriya</option>
-            <option value="14">Saray</option>
-            <option value="17">Sərdabə</option>
-            <option value="20">Sığınacaq</option>
-            <option value="1">Türbə</option>
-            <option value="0">Yaşayış evi</option>
-            <option value="2">Yaşayış yeri</option>
-            <option value="21">Mağara</option>
-            {/* <option value="5">Körpü</option>
-            <option value="6">Körpü</option> */}
+
+            {types.map((type) => (
+              <option value={type.id}>{type.name}</option>
+            ))}
           </select>
           <input
             className={monuments_styles.radio__input}
@@ -202,7 +182,7 @@ const Filter = ({ importances, types, monuments }) => {
             id="myRadio1"
             onChange={(e) => {
               setRadio(e.target.value);
-              setCategory(0);
+              setCategory(2);
               handeFirst();
               setOptionClicked(false);
               setInputClicked(true);
@@ -247,7 +227,7 @@ const Filter = ({ importances, types, monuments }) => {
             id="myRadio3"
             onChange={(e) => {
               setRadio(e.target.value);
-              setCategory(2);
+              setCategory(0);
               handeThird();
               setOptionClicked(false);
               setInputClicked(true);

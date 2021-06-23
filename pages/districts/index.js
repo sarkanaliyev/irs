@@ -136,7 +136,7 @@ export async function getStaticProps() {
   return {
     props: {
       districts,
-      monuments
+      monuments,
     },
   };
 }

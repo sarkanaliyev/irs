@@ -80,8 +80,7 @@ const Monument = ({ monument }) => {
               onClick={() => {
                 {
                   monument.before_occupation &&
-                    (setCurrentImage(monument.before_occupation),
-                    handeFirst());
+                    (setCurrentImage(monument.before_occupation), handeFirst());
                 }
               }}
             >
@@ -118,17 +117,16 @@ const Monument = ({ monument }) => {
             > */}
 
             <a
-              id="fourth"
+              id="third"
               // href={`${monument.berpa_link}`}
               onClick={() => {
                 {
-                  monument.berpa_image[0] &&
-                    setCurrentImage(monument.berpa_image[0]),
-                    handeFourth();
+                  monument.berpa_image && setCurrentImage(monument.berpa_image),
+                    handeThird();
                 }
               }}
             >
-              {monument.berpa_image[0] ? (
+              {monument.berpa_image ? (
                 <p className={styles.p}>BƏRPA</p>
               ) : (
                 <p className={styles.pa}>BƏRPA</p>
@@ -142,14 +140,11 @@ const Monument = ({ monument }) => {
           <div class={styles.column}>
             <img src={"/frametop.svg"} />
             <a
-              id="third"
+              id="fourth"
               onClick={() => {
                 {
                   monument.after_occupation &&
-                    (setCurrentImage(
-                      monument.after_occupation
-                    ),
-                    handeThird());
+                    (setCurrentImage(monument.after_occupation), handeFourth());
                 }
               }}
             >

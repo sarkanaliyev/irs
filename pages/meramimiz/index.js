@@ -13,7 +13,6 @@ import { useRouter } from "next/router";
 import home_styles from "../../styles/Home.module.css";
 
 const Meram = ({ monuments }) => {
-  // console.log(monuments.map((item)=>item.slug));
   const router = useRouter();
   const new_monument_arr = [
     {
@@ -83,7 +82,6 @@ const Meram = ({ monuments }) => {
           </a>
           <a className={monuments_styles.heyder_eliyev}>Heydər Əliyev</a>
         </div>
-        {/* <p className={styles.districts_az}>AZ</p> */}
         <div className={monuments_styles.hamburger_div}>
           <div className={home_styles.search_div}>
             <input

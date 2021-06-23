@@ -92,21 +92,21 @@ export default function Map({ className }) {
             setRayonName("Kəlbəcər");
             setRayonSlug("kelbecer");
             setAbideler([
-              {
-                abideName: "Xudavəng monastrı",
-                abideSlug: "xudaveng-monastri",
-                abideIcon: "church.svg",
-              },
-              {
-                abideName: "İstisu",
-                abideSlug: "istisu",
-                abideIcon: "city-hall.svg",
-              },
-              {
-                abideName: "Lex Qalası",
-                abideSlug: "lex-qalasi",
-                abideIcon: "castle.svg",
-              },
+              // {
+              //   abideName: "Xudavəng monastrı",
+              //   abideSlug: "xudaveng-monastri",
+              //   abideIcon: "church.svg",
+              // },
+              // {
+              //   abideName: "İstisu",
+              //   abideSlug: "istisu",
+              //   abideIcon: "city-hall.svg",
+              // },
+              // {
+              //   abideName: "Lex Qalası",
+              //   abideSlug: "lex-qalasi",
+              //   abideIcon: "castle.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.kelbecer_path}`}
@@ -128,21 +128,21 @@ export default function Map({ className }) {
                 abideSlug: "agoglan-monastri",
                 abideIcon: "church.svg",
               },
-              {
-                abideName: "Həmzə Soltan sarayı",
-                abideSlug: "hemze-soltan-sarayi",
-                abideIcon: "saray.svg",
-              },
+              // {
+              //   abideName: "Həmzə Soltan sarayı",
+              //   abideSlug: "hemze-soltan-sarayi",
+              //   abideIcon: "saray.svg",
+              // },
               // {
               //   abideName: "Məlikəjdər türbəsi",
               //   abideSlug: "melikejder-tuerbesi",
               //   abideIcon: "Türbə.svg",
               // },
-              {
-                abideName: "Cicimli kəndinin türbələri",
-                abideSlug: "cicimli-kendinin-tuerbeleri",
-                abideIcon: "Türbə.svg",
-              },
+              // {
+              //   abideName: "Cicimli kəndinin türbələri",
+              //   abideSlug: "cicimli-kendinin-tuerbeleri",
+              //   abideIcon: "Türbə.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.lacin_path}`}
@@ -162,21 +162,21 @@ export default function Map({ className }) {
             setRayonName("Qubadlı");
             setRayonSlug("qubadli");
             setAbideler([
-              {
-                abideName: "Məscid (Dəmirçilər kəndi)",
-                abideSlug: "m-scid-d-mircil-r-k-ndi",
-                abideIcon: "mosque.svg",
-              },
-              {
-                abideName: "Məscid (Yusifbəyli kəndi)",
-                abideSlug: "m-scid-yusifb-yli-k-ndi",
-                abideIcon: "mosque.svg",
-              },
-              {
-                abideName: "Məscid (Məmər kəndi)",
-                abideSlug: "m-scid-m-m-r-k-ndi",
-                abideIcon: "mosque.svg",
-              },
+              // {
+              //   abideName: "Məscid (Dəmirçilər kəndi)",
+              //   abideSlug: "m-scid-d-mircil-r-k-ndi",
+              //   abideIcon: "mosque.svg",
+              // },
+              // {
+              //   abideName: "Məscid (Yusifbəyli kəndi)",
+              //   abideSlug: "m-scid-yusifb-yli-k-ndi",
+              //   abideIcon: "mosque.svg",
+              // },
+              // {
+              //   abideName: "Məscid (Məmər kəndi)",
+              //   abideSlug: "m-scid-m-m-r-k-ndi",
+              //   abideIcon: "mosque.svg",
+              // },
               // {
               //   abideName: "Qaçaq Nəbi və Həcərin heykəli",
               //   abideSlug: "qacaq-n-bi-v-h-c-rin-heyk-li",
@@ -198,26 +198,26 @@ export default function Map({ className }) {
             setRayonName("Zəngilan");
             setRayonSlug("zengilan");
             setAbideler([
-              {
-                abideName: "Səkkizguşəli Xacə Yəhya turbəsi",
-                abideSlug: "s-kkizgus-li-xac-y-hya-turb-si",
-                abideIcon: "Türbə.svg",
-              },
-              {
-                abideName: "Sərdabə (Yenikənd kəndi)",
-                abideSlug: "s-rdab-yenik-nd-k-ndi",
-                abideIcon: "tomb.svg",
-              },
-              {
-                abideName: "Məscid, Malatkeşin kəndi",
-                abideSlug: "m-scid-malatkesin-k-ndi",
-                abideIcon: "mosque.svg",
-              },
-              {
-                abideName: "Məscid, Qıraq Müşlan kəndi",
-                abideSlug: "m-scid-qiraq-mueslan-k-ndi",
-                abideIcon: "mosque.svg",
-              },
+              // {
+              //   abideName: "Səkkizguşəli Xacə Yəhya turbəsi",
+              //   abideSlug: "s-kkizgus-li-xac-y-hya-turb-si",
+              //   abideIcon: "Türbə.svg",
+              // },
+              // {
+              //   abideName: "Sərdabə (Yenikənd kəndi)",
+              //   abideSlug: "s-rdab-yenik-nd-k-ndi",
+              //   abideIcon: "tomb.svg",
+              // },
+              // {
+              //   abideName: "Məscid, Malatkeşin kəndi",
+              //   abideSlug: "m-scid-malatkesin-k-ndi",
+              //   abideIcon: "mosque.svg",
+              // },
+              // {
+              //   abideName: "Məscid, Qıraq Müşlan kəndi",
+              //   abideSlug: "m-scid-qiraq-mueslan-k-ndi",
+              //   abideIcon: "mosque.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.zengilan_path}`}
@@ -237,26 +237,26 @@ export default function Map({ className }) {
             setRayonName("Cəbrayıl");
             setRayonSlug("cebrayil");
             setAbideler([
-              {
-                abideName: "Sərdabə",
-                abideSlug: "s-rdab",
-                abideIcon: "tomb.svg",
-              },
-              {
-                abideName: "Səkkizguşəli türbə",
-                abideSlug: "s-kkizgus-li-tuerb",
-                abideIcon: "Türbə.svg",
-              },
-              {
-                abideName: "Xudafərin körpüləri",
-                abideSlug: "xudaf-rin-koerpuesue",
-                abideIcon: "bridge.svg",
-              },
-              {
-                abideName: "Məscid (Yuxarı Məzrə kəndi)",
-                abideSlug: "m-scid-yuxari-m-zr-k-ndi",
-                abideIcon: "mosque.svg",
-              },
+              // {
+              //   abideName: "Sərdabə",
+              //   abideSlug: "s-rdab",
+              //   abideIcon: "tomb.svg",
+              // },
+              // {
+              //   abideName: "Səkkizguşəli türbə",
+              //   abideSlug: "s-kkizgus-li-tuerb",
+              //   abideIcon: "Türbə.svg",
+              // },
+              // {
+              //   abideName: "Xudafərin körpüləri",
+              //   abideSlug: "xudaf-rin-koerpuesue",
+              //   abideIcon: "bridge.svg",
+              // },
+              // {
+              //   abideName: "Məscid (Yuxarı Məzrə kəndi)",
+              //   abideSlug: "m-scid-yuxari-m-zr-k-ndi",
+              //   abideIcon: "mosque.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.cebrayil_path}`}
@@ -273,26 +273,26 @@ export default function Map({ className }) {
             setRayonName("Füzuli");
             setRayonSlug("fuzuli");
             setAbideler([
-              {
-                abideName: "Hacı Ələkbər məscidi",
-                abideSlug: "haci-elekber-mescidi",
-                abideIcon: "mosque.svg",
-              },
-              {
-                abideName: "Hacı Qiyasəddin məscidi",
-                abideSlug: "haci-qiyaseddin",
-                abideIcon: "mosque.svg",
-              },
+              // {
+              //   abideName: "Hacı Ələkbər məscidi",
+              //   abideSlug: "haci-elekber-mescidi",
+              //   abideIcon: "mosque.svg",
+              // },
+              // {
+              //   abideName: "Hacı Qiyasəddin məscidi",
+              //   abideSlug: "haci-qiyaseddin",
+              //   abideIcon: "mosque.svg",
+              // },
               {
                 abideName: "Karvansaray",
                 abideSlug: "karvansaray",
                 abideIcon: "karvansaray.svg",
               },
-              {
-                abideName: "Mirəli türbəsi",
-                abideSlug: "mireli-tuerbesi",
-                abideIcon: "Türbə.svg",
-              },
+              // {
+              //   abideName: "Mirəli türbəsi",
+              //   abideSlug: "mireli-tuerbesi",
+              //   abideIcon: "Türbə.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.fuzuli_path}`}
@@ -309,11 +309,11 @@ export default function Map({ className }) {
             setRayonName("Xocalı");
             setRayonSlug("xocali");
             setAbideler([
-              {
-                abideName: "Əsgəran qalası",
-                abideSlug: "sg-ran-qalasi",
-                abideIcon: "castle.svg",
-              },
+              // {
+              //   abideName: "Əsgəran qalası",
+              //   abideSlug: "sg-ran-qalasi",
+              //   abideIcon: "castle.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.xocali_path}`}
@@ -335,22 +335,22 @@ export default function Map({ className }) {
             setAbideler([
               {
                 abideName: "X.Natəvanın evi",
-                abideSlug: "x-natavanin-evi",
+                abideSlug: "x-nat-vanin-evi",
                 abideIcon: "city-hall.svg",
               },
               {
                 abideName: "Yuxarı Gövhər ağa məscidi",
-                abideSlug: "yuxari-govher-aga-mescidi",
+                abideSlug: "yuxari-goevh-r-aga-m-scidi",
                 abideIcon: "mosque.svg",
               },
               {
                 abideName: "M.P.Vaqifin türbəsi",
-                abideSlug: "m-p-vaqifin-turbesi",
+                abideSlug: "m-p-vaqifin-tuerb-si",
                 abideIcon: "Türbə.svg",
               },
               {
                 abideName: "Hacı Quluların malikanəsi",
-                abideSlug: "haci-qulularin-malikanesi",
+                abideSlug: "haci-qulularin-malikan-si",
                 abideIcon: "mansion.svg",
               },
             ]);
@@ -377,21 +377,21 @@ export default function Map({ className }) {
                 abideSlug: "agdam-cuem-m-scidi",
                 abideIcon: "mosque.svg",
               },
-              {
-                abideName: "Qutlu Xacə Musa oğlu türbəsi",
-                abideSlug: "qutlu-xac-musa-oglu-tuerb-si",
-                abideIcon: "Türbə.svg",
-              },
-              {
-                abideName: "Şahbulaq qəsri",
-                abideSlug: "sahbulaq-q-sri",
-                abideIcon: "qesr.svg",
-              },
-              {
-                abideName: "Uğurlu bəyin türbəsi",
-                abideSlug: "ugurlu-b-yin-tuerb-si",
-                abideIcon: "Türbə.svg",
-              },
+              // {
+              //   abideName: "Qutlu Xacə Musa oğlu türbəsi",
+              //   abideSlug: "qutlu-xac-musa-oglu-tuerb-si",
+              //   abideIcon: "Türbə.svg",
+              // },
+              // {
+              //   abideName: "Şahbulaq qəsri",
+              //   abideSlug: "sahbulaq-q-sri",
+              //   abideIcon: "qesr.svg",
+              // },
+              // {
+              //   abideName: "Uğurlu bəyin türbəsi",
+              //   abideSlug: "ugurlu-b-yin-tuerb-si",
+              //   abideIcon: "Türbə.svg",
+              // },
             ]);
           }}
           id="Ağdam"
@@ -407,11 +407,11 @@ export default function Map({ className }) {
             setRayonName("Tərtər");
             setRayonSlug("terter");
             setAbideler([
-              {
-                abideName: "Məbəd (Talış kəndi)",
-                abideSlug: "m-b-d-talis-k-ndi",
-                abideIcon: "məbəd.svg",
-              },
+              // {
+              //   abideName: "Məbəd (Talış kəndi)",
+              //   abideSlug: "m-b-d-talis-k-ndi",
+              //   abideIcon: "məbəd.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.terter_path}`}
@@ -428,11 +428,16 @@ export default function Map({ className }) {
             setRayonName("Xocavənd");
             setRayonSlug("xocavend");
             setAbideler([
-              {
-                abideName: "Azıx mağarası",
-                abideSlug: "azix-magarasi",
-                abideIcon: "cave.svg",
-              },
+              // {
+              //   abideName: "Azıx mağarası",
+              //   abideSlug: "azix-magarasi",
+              //   abideIcon: "cave.svg",
+              // },
+              // {
+              //   abideName: "Karvansaray",
+              //   abideSlug: "karvansaray",
+              //   abideIcon: "cave.svg",
+              // },
             ]);
           }}
           className={`${style.path} ${style.xocavend_path}`}

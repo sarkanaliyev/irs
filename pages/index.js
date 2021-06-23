@@ -1,32 +1,11 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
-
 import { fromImageToUrl, API_URL } from "../utils/urls";
-import monuments_styles from "../pages/monument/Monument.module.css";
-import districts_styles from "../pages/districts/Districts.module.css";
-
-// import { Timeline } from "gsap/gsap-core";
-// import ReactAudioPlayer from "react-audio-player";
-
 import Menu from "../components/Menu";
 import Map from "../components/Map";
-import { BsArrowLeft } from "react-icons/bs";
-
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 export default function Home({ districts }) {
-  const router = useRouter();
-  const [searchTerm, setSearchTerm] = useState();
-
-  // const tl1 = new Timeline({ defaults: { ease: "power1.out" } });
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     tl1.to(".slider", { y: "-100%", duration: 1.5 });
-  //   }, 20000);
-  // });
-
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -46,6 +25,7 @@ export default function Home({ districts }) {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
+
   return (
     <div className={styles.container}>
       <div className={styles.home_top}>
@@ -56,23 +36,6 @@ export default function Home({ districts }) {
           Azərbaycan mİllİ İrsİnə qarşı soyqırım, bəşərİ İrsə qarşı soyqırımdır!
         </a>
         <div className={styles.hamburger_div}>
-          {/* <input
-            className={styles.search_input}
-            type="text"
-            placeholder="Axtar..."
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-            onKeyPress={(event) => {
-              if (event.key === "Enter") {
-                router.push({
-                  pathname: "/search",
-                  query: { keyword: searchTerm },
-                });
-              }
-            }}
-          /> */}
-
           <a href="#" className={styles.hamburger} onClick={openNav}>
             <div className={styles.h_div}></div>
             <div className={styles.h_div}></div>
